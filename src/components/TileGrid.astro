@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+const pages = await getCollection('pages');
+const categories = await getCollection('categories');
+const categoryNameBySlug = new Map(categories.map((c) => [c.data.slug, c.data.name]));
+
+// front-page.php excludes posts flagged `not-on-front` (e.g. co-ming-son
+// is currently a real, published, individually-viewable post that's
+// intentionally hidden from the grid) -- sortNumber is only ever set when
+// the scraper actually found this post's tile in the live grid, so its
+// absence is the signal to exclude it here too, rather than rendering a
+// tile with no thumbnail/categories.
+const postTiles = posts
+  .filter((post) => post.data.sortNumber !== undefined)
+  .map((post) => ({
+    slug: post.data.slug,
+    title: post.data.title,
+    isPage: false,
+    thumbnail: post.data.thumbnail,
+    tileColumns: post.data.tileColumns,
+    categories: post.data.categories,
+    copyright: post.data.copyright,
+    sortNumber: post.data.sortNumber ?? 0,
+  }));
+
+// front-page.php's tile query includes post_type=page too (e.g. the About
+// page) -- only pages that actually have a frontpageTile (captured live)
+// show up here, with their own pseudo-category and tile-specific label
+// (falls back to the main-menu title) and thumbnail (ACF image_front,
+// which can differ from the page's own featuredImage).
+const pageTiles = pages
+  .filter((page) => page.data.frontpageTile)
+  .map((page) => ({
+    slug: page.data.slug,
+    title: page.data.frontpageTile!.label,
+    isPage: true,
+    thumbnail: page.data.frontpageTile!.thumbnail,
+    tileColumns: page.data.frontpageTile!.tileColumns,
+    categories: [page.data.frontpageTile!.categorySlug].filter(Boolean),
+    copyright: undefined,
+    sortNumber: page.data.frontpageTile!.sortNumber,
+  }));
+
+const tiles = [...postTiles, ...pageTiles].sort((a, b) => a.sortNumber - b.sortNumber);
+---
+
+<div class="grid-container-space-between tiles">
+  {
+    tiles.map((tile) => {
+      const filterClasses = tile.categories.map((slug) => `tiles__filter--${slug}`).join(' ');
+      return (
+        <div
+          class={`tiles__item tiles__item--col-${tile.tileColumns}${tile.isPage ? ' tiles__item--page' : ''} ${filterClasses}`}
+          data-category={tile.categories.join(' ')}
+          data-id={tile.slug}
+        >
+          <div class="tiles__cats-wrapper">
+            {tile.categories.map((slug) => (
+              <button data-filter-target={slug} class="tiles__cat-filter">
+                {categoryNameBySlug.get(slug) ?? tile.title}
+              </button>
+            ))}
+          </div>
+          <a class="tiles__item-link" href={`/${tile.slug}/`}>
+            <div class="tiles__img-wrapper">
+              <img src={tile.thumbnail} alt={tile.title} />
+            </div>
+            <article class="tiles__text-wrapper">
+              {tile.isPage ? (
+                <h2 class="tiles__item-title">{tile.title}</h2>
+              ) : (
+                <h3 class="tiles__item-title">{tile.title}</h3>
+              )}
+              {tile.copyright && <div class="tiles__item-copyright">{tile.copyright}</div>}
+            </article>
+          </a>
+        </div>
+      );
+    })
+  }
+</div>

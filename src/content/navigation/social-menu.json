@@ -1,0 +1,27 @@
+{
+  "location": "social-menu",
+  "items": [
+    {
+      "label": "mail",
+      "url": "mailto:michele@studio-mi.ch",
+      "children": []
+    },
+    {
+      "label": "instagram",
+      "url": "https://www.instagram.com/studiomi.ch",
+      "target": "_blank",
+      "children": []
+    },
+    {
+      "label": "linkedin",
+      "url": "https://www.linkedin.com/company/studio-mi-gmbh",
+      "target": "_blank",
+      "children": []
+    },
+    {
+      "label": "mobile",
+      "url": "https://wa.me/0041797980955",
+      "children": []
+    }
+  ]
+}

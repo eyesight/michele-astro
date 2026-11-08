@@ -1,0 +1,48 @@
+{
+  "title": "Die Portraits von Varia Instruments auf 2cm²",
+  "slug": "varia-illustration",
+  "categories": [
+    "illustration"
+  ],
+  "sortDate": "2022-10-07",
+  "tileColumns": 4,
+  "sortNumber": 6,
+  "thumbnail": "/uploads/2022/10/VAR_Coverbild-1.jpg",
+  "heroImage": "/uploads/2022/10/VAR_Illu_Vektor-scaled.jpg",
+  "heroImageMobile": "/uploads/2022/10/VAR_Illu_MobileHero_1100.1600px.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Wer sich einen Mixer von VARIA Instruments gönnt, ist vermutlich DJ, Club-Besitzer oder zumindest hochgradig audiophil. Zum Launch des neuen Vierkanal Mixer RDM40 hielt VARIA eine wortwörtlich kleine aber charmante Überraschung bereit: Ein auf Platine geätztes Portrait der VARIA Köpfe Simon und Marcel als Schlüsselanhänger. \n\nWeniger klein waren die technischen Anforderung an die Illustration: auf kleinster Fläche bei geringstem Detailgrad maximale Wiedererkennbarkeit zu erreichen. Im Prozess über zahlreiche Handskizzen näherte ich mich an das finale, digitalisierte Resultat: Die Gründer und ihr Mixer in Zinn auf 2.8 × 2.35 cm.",
+  "copyright": "Studio mi",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "selfHostedVideo",
+      "src": "/uploads/2022/10/Studio-mi-4k_10.mp4",
+      "autoplay": true,
+      "loop": true,
+      "muted": false
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "selfHostedVideo",
+          "src": "/uploads/2022/10/VAR_Kombi_Sketch-2_2.mp4",
+          "autoplay": true,
+          "loop": true,
+          "muted": false
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Die Portraits von Varia Instruments auf 2cm²",
+    "description": "Die Illustration für Varia Instruments zeigt die beiden Gründer mit ihrem neuen RDM40 in eine Platine eingeätzt auf 6.58 cm²"
+  }
+}

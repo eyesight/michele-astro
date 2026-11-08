@@ -1,0 +1,58 @@
+{
+  "title": "Portrait Illustrationen",
+  "slug": "neujahrsgruesse-und-eine-danke-von-studio-mi",
+  "categories": [
+    "illustration"
+  ],
+  "sortDate": "2022-01-01",
+  "tileColumns": 2,
+  "sortNumber": 10,
+  "thumbnail": "/uploads/2023/04/MG_8063_KOR_UC_cut-scaled.jpg",
+  "heroImage": "/uploads/2023/04/Portrait_Fullscreen_3-scaled.jpg",
+  "heroImageMobile": "/uploads/2023/04/Portrait_Illus_mob-scaled.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Handwerkliche Techniken in Verbindung mit digitalen Tools – stets auf der Suche nach Ausdrucksformen, die zum Charakter des Porträtierten passen.",
+  "copyright": "Studio mi",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2019/12/Speed_Illu_breit_01.jpg",
+          "alt": "",
+          "columns": 12
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2023/04/MG_8063_KOR_UC_cut-scaled.jpg",
+          "alt": "",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2023/04/mi_Joerg_Lukas-2-e1743166326789.png",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2023/04/mi_Betti_Brigitta-e1743166445376.png",
+          "alt": "",
+          "columns": 4
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Portrait Illustrationen",
+    "description": "Creative Concepts and Design"
+  }
+}

@@ -1,0 +1,5 @@
+<svg class="x" data-name="x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.22 26.22">
+  <title>x</title>
+  <line class="x__line" x1="0.07" y1="0.07" x2="26.15" y2="26.15" style="fill: none;stroke: #0013ff;stroke-miterlimit: 10;stroke-width: 0.2px"/>
+  <line class="x__line" x1="0.07" y1="26.15" x2="26.15" y2="0.07" style="fill: none;stroke: #0013ff;stroke-miterlimit: 10;stroke-width: 0.2px"/>
+</svg>

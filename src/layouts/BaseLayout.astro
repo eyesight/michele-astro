@@ -1,0 +1,76 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getEntry } from 'astro:content';
+import '../styles/scss/wordpress.scss';
+
+interface Props {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+  isFrontPage?: boolean;
+  backgroundColor?: string;
+  textColor?: string;
+  headerColor?: string;
+}
+const {
+  title,
+  description,
+  bodyClass = '',
+  isFrontPage = false,
+  backgroundColor,
+  textColor,
+  headerColor,
+} = Astro.props;
+
+const settings = await getEntry('siteSettings', 'settings');
+const gaId = settings?.data.gaTrackingId;
+
+const styleVars = [
+  backgroundColor && `--mim-background-color:${backgroundColor};`,
+  textColor && `--mim-text-color:${textColor};`,
+  headerColor && `--mim-header-color:${headerColor};`,
+]
+  .filter(Boolean)
+  .join(' ');
+---
+
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+
+    {
+      gaId && (
+        <Fragment>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+          <script define:vars={{ gaId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', gaId);
+          </script>
+        </Fragment>
+      )
+    }
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico" />
+
+    <script>
+      import '../scripts/site.js';
+    </script>
+  </head>
+  <body class={bodyClass} style={styleVars}>
+    <Header isFrontPage={isFrontPage} />
+    <slot />
+    <Footer />
+  </body>
+</html>

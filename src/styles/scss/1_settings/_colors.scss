@@ -1,0 +1,18 @@
+$color-black: #000000 !default;
+$color-white: #ffffff !default;
+$color-backend: #1dd1a1 !default;
+$color-blue: #0013FF !default;
+$color-blue-90: rgba($color-blue, 0.9) !default;
+$color-blue-100: rgba($color-blue, 1) !default;
+$color-beige: #F1EBE6;
+
+$color-gray: #E9E9E9 !default;
+
+:root {
+    --mim-text-color: #fff;
+    --mim-header-color: #fff;
+    --mim-background-color: #0D0D14;
+}
+
+$color-main-text: var(--mim-text-color) !default;
+$color-primary: var(--mim-background-color) !default;

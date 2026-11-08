@@ -1,0 +1,17 @@
+.paragraph,
+p {
+    @include ld-margin-bottom();
+    @include ld-margin-bottom($gutter*3, '.title-h3');
+    @include ld-margin-bottom($gutter*3, 'h3.wp-block-heading');
+    @include ld-margin-bottom($gutter*3, '.prev-next');
+    @include ld-margin-bottom($gutter*3, '.footer');
+    @include ld-margin-bottom($spacing-between-images, '.wp-block-cgb-block-mim-image-container');
+    @include ld-margin-bottom($spacing-between-images, '.image');
+    @include type-face($type-face, $font-weight);
+    @include font-size($font-settings-body);
+
+    @include md-max(){
+        @include ld-margin-bottom($spacing-between-images-s, '.wp-block-cgb-block-mim-image-container');
+        @include ld-margin-bottom($spacing-between-images-s, '.image');
+    }
+}

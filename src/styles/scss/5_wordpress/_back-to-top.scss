@@ -1,0 +1,30 @@
+.totop {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    z-index: 1000;
+    cursor: pointer;
+
+    
+    &__text{
+        opacity: 0;
+    }
+
+    svg {
+        width: 15px;
+        transform: translateX(-50%) rotate(-90deg);
+        left: 50%;
+    }
+    
+    .st0 {
+        fill:none;
+        stroke: var(--mim-text-color);
+        stroke-width:2;
+        stroke-miterlimit:10;
+    }
+}

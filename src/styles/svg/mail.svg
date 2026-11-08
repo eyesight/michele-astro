@@ -1,0 +1,11 @@
+
+<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-727.000000, -54.000000)" stroke="#000000">
+            <g id="Group-2" transform="translate(727.000000, 54.000000)">
+                <rect id="Rectangle-5" x="0.5" y="0.5" width="28" height="19"></rect>
+                <polyline id="Triangle" transform="translate(14.500000, 5.517241) rotate(-180.000000) translate(-14.500000, -5.517241) " points="1 10.3448276 14.5 0.689655172 14.5 0.689655172 28 10.3448276"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

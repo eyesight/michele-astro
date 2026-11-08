@@ -1,0 +1,38 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+import TextBlock from './TextBlock.astro';
+import Heading3Block from './Heading3Block.astro';
+import ImageBlock from './ImageBlock.astro';
+import ImageSizedBlock from './ImageSizedBlock.astro';
+import ImageWithTextBlock from './ImageWithTextBlock.astro';
+import TitleWithImageBlock from './TitleWithImageBlock.astro';
+import VideoBlock from './VideoBlock.astro';
+import ImageContainerBlock from './ImageContainerBlock.astro';
+import ListBlock from './ListBlock.astro';
+import ParagraphBlock from './ParagraphBlock.astro';
+import HeadingBlock from './HeadingBlock.astro';
+import EmbedBlock from './EmbedBlock.astro';
+import SelfHostedVideoBlock from './SelfHostedVideoBlock.astro';
+import AccordionBlock from './AccordionBlock.astro';
+import RawHtmlBlock from './RawHtmlBlock.astro';
+
+type Props = { block: z.infer<typeof blockSchema> };
+const { block } = Astro.props;
+---
+
+{block.type === 'text' && <TextBlock {...block} />}
+{block.type === 'heading3' && <Heading3Block {...block} />}
+{block.type === 'image' && <ImageBlock {...block} />}
+{block.type === 'imageSized' && <ImageSizedBlock {...block} />}
+{block.type === 'imageWithText' && <ImageWithTextBlock {...block} />}
+{block.type === 'titleWithImage' && <TitleWithImageBlock {...block} />}
+{block.type === 'video' && <VideoBlock {...block} />}
+{block.type === 'imageContainer' && <ImageContainerBlock {...block} />}
+{block.type === 'list' && <ListBlock {...block} />}
+{block.type === 'paragraph' && <ParagraphBlock {...block} />}
+{block.type === 'heading' && <HeadingBlock {...block} />}
+{block.type === 'embed' && <EmbedBlock {...block} />}
+{block.type === 'selfHostedVideo' && <SelfHostedVideoBlock {...block} />}
+{block.type === 'accordion' && <AccordionBlock {...block} />}
+{block.type === 'rawHtml' && <RawHtmlBlock {...block} />}

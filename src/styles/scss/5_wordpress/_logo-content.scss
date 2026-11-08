@@ -1,0 +1,47 @@
+.logo-content{
+    @include make-grid-item($col-span-tile-4, $margin-bottom: 0);
+    position: relative;
+    z-index: 10;
+
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections/4);
+        width: 135px;
+        position: fixed;
+        top: 10px;
+        z-index: 10000;
+    }
+    
+    @include xs-max(){
+        @include ld-margin-bottom($spacing-between-sections/4);
+        width: 135px;
+        position: fixed;
+        top: 10px;
+        z-index: 10000;
+    }
+ 
+    &__link{
+        display: block; 
+        width: 100% / 4 * 2;
+        opacity: 1;
+        transition: all 0.3s ease-in-out; 
+        
+        .logo-shrink &{
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        @include sm-max(){
+            transition: all 0.3s ease-in-out 0.3s; 
+            width: 100%;
+        }
+    }
+
+    &__img{
+        width: 100%; 
+
+        &--small{
+            height: 25px;
+            width: auto;
+        }
+    }
+}

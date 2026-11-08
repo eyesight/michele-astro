@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  isFrontPage: boolean;
+}
+const { isFrontPage } = Astro.props;
+
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const mainMenu = await getCollection('navigation', (entry) => entry.data.location === 'main-menu');
+const navItems = mainMenu[0]?.data.items ?? [];
+---
+
+<button class="header__burger js-burger"><span class="line" /><span class="line" /><span class="line" /></button>
+<!-- The combined filter list with navigation menu -->
+<div class="filter">
+  <div class="filter__wrapper">
+    {navItems.map((item) => <a href={item.url} class="filter__button">{item.label}</a>)}
+    {
+      categories.map((cat) =>
+        isFrontPage ? (
+          <button class="filter__button" data-filter-target={cat.data.slug}>
+            {cat.data.name}
+          </button>
+        ) : (
+          <a href={`/#${cat.data.slug}`} class="filter__button" data-filter-target={cat.data.slug}>
+            {cat.data.name}
+          </a>
+        ),
+      )
+    }
+  </div>
+</div>

@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlockRenderer from '../components/blocks/BlockRenderer.astro';
+import TitleLead from '../components/TitleLead.astro';
+import HeroMedia from '../components/HeroMedia.astro';
+import PrevNext from '../components/PrevNext.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  const posts = await getCollection('posts');
+
+  return [
+    ...pages.map((entry) => ({ params: { slug: entry.data.slug }, props: { kind: 'page' as const, entry } })),
+    ...posts.map((entry) => ({ params: { slug: entry.data.slug }, props: { kind: 'post' as const, entry } })),
+  ];
+}
+
+const { kind, entry } = Astro.props;
+---
+
+{
+  kind === 'page' && (
+    <BaseLayout
+      title={entry.data.seo?.title ?? entry.data.title}
+      description={entry.data.seo?.description}
+      backgroundColor={entry.data.backgroundColor}
+      textColor={entry.data.textColor}
+      headerColor={entry.data.headerColor}
+    >
+      {entry.data.template === 'withImage' ? (
+        <main class="content title-image">
+          <div class="grid-container title-image__container">
+            <div class="title-image__image">
+              {entry.data.featuredImage && <img src={entry.data.featuredImage} alt="" />}
+            </div>
+            <div class="title-image__wrapper">
+              {entry.data.credits.map((c) => (
+                <div class="title-image__credit">
+                  <p class="title-image__text bold">{c.job}</p>
+                  <p class="title-image__text">{c.name}</p>
+                </div>
+              ))}
+              <h1 class="title-image__title">{entry.data.title}</h1>
+              {entry.data.lead && <p class="title-image__lead">{entry.data.lead}</p>}
+              {entry.data.body.map((block) => (
+                <BlockRenderer block={block} />
+              ))}
+            </div>
+          </div>
+        </main>
+      ) : (
+        <main class={entry.data.template === 'leftIndent' ? 'content-left-indent' : 'main page'}>
+          <div class="content title">
+            <h1 class="title__text">{entry.data.title}</h1>
+          </div>
+          {entry.data.body.map((block) => (
+            <BlockRenderer block={block} />
+          ))}
+        </main>
+      )}
+    </BaseLayout>
+  )
+}
+
+{
+  kind === 'post' && (
+    <BaseLayout
+      title={entry.data.seo?.title ?? entry.data.title}
+      description={entry.data.seo?.description}
+      backgroundColor={entry.data.backgroundColor}
+      textColor={entry.data.textColor}
+      headerColor={entry.data.headerColor}
+    >
+      <main class="main single" data-sticky-container>
+        <HeroMedia
+          heroImage={entry.data.heroImage}
+          heroImageMobile={entry.data.heroImageMobile}
+          heroVideo={entry.data.heroVideo}
+          heroWidth={entry.data.heroWidth}
+          heroObjectFitContain={entry.data.heroObjectFitContain}
+          fallbackImage={entry.data.thumbnail}
+        />
+        <TitleLead
+          title={entry.data.title}
+          headline={entry.data.headline}
+          lead={entry.data.lead}
+          copyright={entry.data.copyright}
+          client={entry.data.client}
+          credits={entry.data.credits}
+        />
+        <div class="bg-white">
+          {entry.data.body.map((block) => (
+            <BlockRenderer block={block} />
+          ))}
+          <PrevNext currentSlug={entry.data.slug} />
+        </div>
+      </main>
+    </BaseLayout>
+  )
+}

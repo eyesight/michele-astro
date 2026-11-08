@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TileGrid from '../components/TileGrid.astro';
+import { getEntry } from 'astro:content';
+
+const settings = await getEntry('siteSettings', 'settings');
+const seo = settings?.data.homeSeo;
+---
+
+<BaseLayout title={seo?.title ?? 'Studio mi'} description={seo?.description} bodyClass="home" isFrontPage={true}>
+  <main class="content">
+    <h1 class="visually-hidden">{seo?.title ?? 'Studio mi'}</h1>
+    <TileGrid />
+  </main>
+</BaseLayout>

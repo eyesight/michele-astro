@@ -1,0 +1,202 @@
+:root {
+	--mim-icon-distance: 5px;
+	--mim-icon-arrowsize: 15px;
+}
+
+.filter {
+	max-width: 70%;
+	margin-top: 30px;
+	top: 30px;
+	position: absolute;
+	background-color: var(--mim-background-color);
+
+	opacity: 0;
+	visibility: hidden;
+	// transition: all ease-in-out 0.75s;
+
+	&::after {
+		background-color: var(--mim-background-color);
+		content: '';
+		position: absolute;
+		width: 100vw;
+		height: calc(100% + 10px);
+		left: -20px;
+		top: -10px;
+		z-index: -1;
+
+		@include md-min {
+			left: -65px;
+		}
+
+		@include lg-min {
+			display: none;
+		}
+	}
+
+	@include md-min { 
+		top: 25px;
+	}
+
+	@include lg-min {
+		position: relative;
+		margin-top: 0px;
+		top: 0px;
+		background-color: transparent;
+	}
+
+	@include md-max() {
+		max-width: 100%;
+		@include ld-margin-bottom($spacing-between-sections/4);
+	}
+
+	@include lg-min {
+		--mim-icon-distance: 5px;
+	}
+
+	.nav-is-visible & {
+		@include lg-min {
+			opacity: 1;
+			visibility: visible;
+			transition: all ease-in-out 0.75s;
+		}
+	}
+
+	.nav-is-open &,
+	.nav-is-visible.nav-is-open & {
+		opacity: 1;
+		visibility: visible;
+		// transition: all ease-in-out 0.75s;
+	}
+
+	&__wrapper {
+		@include flexbox(row, wrap, flex-end, flex-start);
+		max-width: 100%;
+		gap: 8px;
+		padding-bottom: 15px;
+		text-shadow: none;
+
+		@include md-min {
+			max-width: 100%;
+		}
+
+		@include lg-min {
+			background-color: transparent;
+			padding-bottom: 0;
+		}
+
+		.home & a,
+		.home & button {
+			text-shadow: 2px 2px 50px var(--mim-header-color);
+		}
+	}
+
+	&__button,
+	&__text {
+		@include type-face($type-face, $font-weight);
+		@include font-size($font-settings-filter);
+		display: block;
+		background: transparent;
+		color: var(--mim-header-color);
+	}
+
+	&__button,
+	.nav-is-visible.scroll-up &__button {
+		color: transparent;
+		text-shadow: 0 0 7px rgba(255, 255, 255, 0.05);
+		transition: none;
+	}
+
+	.nav-is-visible &__button,
+	.nav-is-visible.scroll-down &__button {
+		color: var(--mim-header-color);
+		text-shadow: 0 0 0 var(--mim-header-color);
+		transition: text-shadow 1.5s ease, color 0.5s ease 0.5s;
+
+		&.active,
+        &:hover,
+        &:focus-visible {
+			transition: none;
+			text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+		}
+	}
+
+	.nav-is-animated &__button {
+		@include lg-min {
+			transition: text-shadow 0s ease, color 0.5s ease 00s;
+		}
+	}
+
+	.nav-is-visible.scroll-down &__button,
+    .nav-is-visible.scroll-down &__button:hover,
+    .nav-is-visible.scroll-down &__button:focus-visible {
+		transition: none;
+		text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+	}
+
+	&__button {
+		display: inline-block;
+		cursor: pointer;
+		text-align: left;
+		white-space: nowrap;
+		padding: 6px 13px 8px 10px;
+		position: relative;
+		text-decoration: none;
+		border: 1px solid var(--mim-header-color);
+		border-radius: 25px;
+		background-color: var(--mim-background-color);
+		flex-shrink: 0;
+
+		@include lg-min {
+			padding: 0 15px 0 23px;
+			border: none;
+			background-color: transparent;
+		}
+
+		span {
+			text-decoration: underline;
+		}
+		&.active,
+		&:hover,
+		&:focus-visible {
+            color: var(--mim-header-color);
+            background-color: $color-blue;
+            transition: none;
+
+            @include lg-min {
+                color: $color-blue !important;
+                background-color: transparent;
+                border-color: transparent;
+
+                &::before {
+                    color: var(--mim-header-color) !important;
+                }
+            }
+		}
+
+		&::before {
+			display: none;
+			content: '•';
+			position: absolute;
+			left: -0.5rem;
+			top: 1rem;
+			transform: translateY(-29%);
+			font-size: 2rem;
+
+			@include lg-min {
+				display: block;
+			}
+		}
+
+        .filter-active &{
+            transition: color .01s ease;
+
+            &::before {
+                color: var(--mim-header-color) !important;
+            }
+        }
+
+		&:first-child::before {
+			display: none;
+		}
+	}
+}

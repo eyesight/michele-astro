@@ -1,0 +1,22 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'list' }>;
+const { groups } = Astro.props;
+---
+
+<div class="content list">
+  <div class="grid-container list__container">
+    {
+      groups.map((group) => (
+        <div class="list__wrapper">
+          {group.title && <h3 class="list__title">{group.title}</h3>}
+          {group.items.map((item) => (
+            <p class="list__item" set:html={item} />
+          ))}
+        </div>
+      ))
+    }
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "title": "Datenschutz",
+  "slug": "datenschutz",
+  "template": "default",
+  "body": [
+    {
+      "type": "rawHtml",
+      "html": "<script class=\"wp-elements-d2a37873023e24d8b4b891f437e3ce29\" src=\"https://app.privacybee.io/widget.js\" defer=\"\"></script>"
+    },
+    {
+      "type": "rawHtml",
+      "html": "<privacybee-widget website-id=\"cloe7azo8000ivv1kcuflrzgu\" type=\"dsg\" lang=\"de\"></privacybee-widget>"
+    }
+  ],
+  "seo": {
+    "title": "Datenschutz",
+    "description": "Erfahren Sie, wie Studio mi GmbH auf studio-mi.ch mit Ihren Daten umgeht. Transparente Infos zu Cookies, Google Analytics, YouTube- und Vimeo-Einbindungen."
+  }
+}

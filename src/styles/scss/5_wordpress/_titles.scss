@@ -1,0 +1,23 @@
+.title-h1 {
+    @include type-face($type-face, $font-weight-bold);
+    @include font-size($font-settings-h1);
+
+    &__button{
+        font-size: inherit;
+        font-family: inherit;
+        text-decoration: underline;
+        cursor: pointer; 
+        padding: 0;
+    }
+}
+
+.title-h2 {
+    @include type-face($type-face, $font-weight-bold);
+    @include font-size($font-settings-h2);
+}
+
+.title-h3{
+    @include type-face($type-face, $font-weight-bold);
+    @include font-size($font-settings-body);
+    @include ld-margin-bottom($spacing-titles);
+}

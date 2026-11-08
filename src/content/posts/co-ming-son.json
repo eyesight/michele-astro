@@ -1,0 +1,82 @@
+{
+  "title": "Strukturgebendes Corporate Design für Co Ming Son",
+  "slug": "co-ming-son",
+  "categories": [],
+  "sortDate": "2025-03-27",
+  "tileColumns": 3,
+  "thumbnail": "",
+  "heroImage": "/uploads/2025/03/AStaender_cleaned_2000px_menschen-scaled.jpg",
+  "heroImageMobile": "/uploads/2025/03/CMS_Astand.jpg",
+  "heroWidth": "content",
+  "heroObjectFitContain": false,
+  "headline": "Ein sichtbares Raster wird zum stilgebenden Element",
+  "lead": "Das Naming für das Asian Fusion Lokal ist eine Referenz an die vietnamesischen Wurzeln des Inhabers und seine freie Interpretation von Pünktlichkeit, der visuelle Auftritt ein Zitat des geplanten Interieurs. Die roten Streben der Wandverkleidung sind gleichzeitig strukturgebendes Layoutprinzip und Ausgangspunkt für das gesamte Look and Feel und den Logo-Aufbau.",
+  "copyright": "Studio mi 2025",
+  "client": "Co Ming Son",
+  "credits": [],
+  "backgroundColor": "#aeaf9f",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "selfHostedVideo",
+          "src": "/uploads/2025/10/CMS_Raster_01.mp4",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/CMS_vkar.jpg",
+          "alt": "",
+          "columns": 12
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/Gruppe-1775.jpg",
+          "alt": "",
+          "columns": 7
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/Gruppe-1774.jpg",
+          "alt": "",
+          "columns": 5
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/Free-iPhone-on-Tile-Mockup-2-scaled.jpg",
+          "alt": "",
+          "columns": 8
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/CMS_Schuerze_02.jpg",
+          "alt": "",
+          "columns": 5
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/CMS_Web_iPad.jpg",
+          "alt": "",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/CMS_menu-scaled.jpg",
+          "alt": "",
+          "columns": 6
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Strukturgebendes Corporate Design für Co Ming Son",
+    "description": "Konzeption und Design für das Asian Fusion Lokal Co Ming Son. Der Auftritt ist inspiriert von der Herkunft des Besitzers."
+  }
+}

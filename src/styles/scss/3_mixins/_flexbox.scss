@@ -1,0 +1,11 @@
+/*
+  Usage:
+  @include flexbox(direction, wrap, justify-content, align-content);
+*/
+@mixin flexbox($direction: row, $wrap: wrap, $justify-content: flex-start, $align-content: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  align-items: $align-content;
+}

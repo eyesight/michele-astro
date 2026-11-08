@@ -1,0 +1,57 @@
+/*
+  Usage:
+  @include font-size(font-settings-variable);
+*/
+@mixin font-size($fs-map: $font-settings-body, $fs-breakpoints: $layout-breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    } @else if $fs-breakpoint == print {
+      @media print {
+        @include make-font-size($fs-font-size);
+      }
+    }
+    @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
+
+/*
+  HELPER MIXINS (do not use)
+*/
+@mixin make-font-size($fs-font-size) {
+  // If $fs-font-size is a list, include
+  // both font-size and line-height
+  @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+  }
+  @else {
+    font-size: $fs-font-size;
+  }
+}
+
+@mixin fluid-fontsize($min-font, $max-font, $min-vw: 480px, $max-vw: 1200px) {
+  font-size: $min-font;
+
+  @media screen and (min-width: $min-vw) {
+    font-size: calc(
+      #{$min-font} + (#{$max-font} - #{$min-font}) * 
+      ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw}))
+    );
+  }
+
+  @media screen and (min-width: $max-vw) {
+    font-size: $max-font;
+  }
+}

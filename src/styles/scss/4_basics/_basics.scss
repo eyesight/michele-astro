@@ -1,0 +1,239 @@
+$var1: 100% / 12 * 4;
+$var2: $gutter * 5;
+
+:root {
+	--header-height: 130px; /* fallback value */
+}
+
+html {
+	font-size: 62.5%;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	@include type-face($type-face, $font-weight);
+	@include font-size($font-settings-body);
+	color: var(--mim-text-color);
+	background-color: var(--mim-background-color);
+	overflow-x: hidden;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	cursor: url('#{$img-path}cursor.png'), default;
+
+	main.content {
+		flex: 1 0 auto;
+	}
+
+	> div,
+	.footer,
+	.header {
+		flex-shrink: 0;
+	}
+}
+
+main {
+	@include sm-min {
+		&::after {
+			content: '';
+			width: 100vw;
+			position: absolute;
+			height: 200px;
+			background: var(--mim-background-color);
+			bottom: -190px;
+			left: 0;
+			z-index: 1;
+		}
+    }
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	@include type-face($type-face-title, $font-weight);
+}
+
+h1 {
+	@include font-size($font-settings-h1);
+}
+
+h2 {
+	@include font-size($font-settings-h2);
+}
+
+h2.wp-block-heading {
+	@include font-size($font-settings-tiles-title);
+}
+
+h3 {
+	@include font-size($font-settings-h3);
+}
+
+h4.wp-block-heading,
+h5.wp-block-heading,
+h6.wp-block-heading {
+	@include font-size($font-settings-body);
+	@include type-face($type-face-title, $font-weight-bold);
+}
+
+h2.wp-block-heading,
+h3.wp-block-heading,
+h4.wp-block-heading {
+	@include ld-margin-bottom($spacing-titles);
+}
+
+* {
+	@include ld-margin-bottom($gutter * 3, 'h2.wp-block-heading');
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+
+	&.lazy {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.4s ease;
+	}
+
+	&.loaded {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+a {
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--mim-text-color);
+
+	&:hover,
+	&:focus {
+		color: var(--mim-text-color);
+		text-decoration: none;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.no-focus {
+	*:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+}
+button {
+	border: none;
+	background: none;
+}
+button:focus {
+	outline: none;
+}
+
+figure {
+	margin: 0;
+}
+
+.content,
+.wp-block-heading,
+.page > p {
+	@include full-width();
+}
+
+.wp-block-video {
+	@include full-width();
+	@include make-grid-item($col-count);
+	padding-left: 0;
+	padding-right: 0
+}
+
+.content-left-indent .content,
+.content-left-indent > * {
+	@include full-width();
+	@include make-grid-item($col-count);
+	padding-left: calc(#{$var1} - #{$var2});
+	margin-bottom: 0;
+}
+
+.page,
+.content-left-indent {
+	@include ld-margin-bottom($spacing-between-sections);
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections / 2); 
+    }
+}
+
+.grid-container {
+	@include make-grid-container($justify-content: flex-end);
+}
+
+.grid-container-space-between {
+	@include make-grid-container($justify-content: space-between);
+}
+
+.grid-offset-container {
+	@include make-offset-grid-container();
+}
+
+.grid-half {
+	@include make-grid-item($col-span-content, $margin-bottom: 0);
+
+	@include sm-max() {
+		@include make-grid-item($col-count);
+	}
+}
+
+.mobile-only {
+	display: none;
+	@include sm-max() {
+		display: block;
+	}
+}
+
+.desktop-only {
+	display: block;
+	@include sm-max() {
+		display: none;
+	}
+}
+
+.home,
+.category {
+	background-color: var(--mim-background-color);
+}
+
+strong {
+	font-weight: 700;
+}
+
+.bg-white {
+	padding-top: $spacing-between-images;
+	background-color: var(--mim-background-color);
+}
+
+.cky-btn-revisit-wrapper {
+	display: none !important;
+}

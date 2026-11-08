@@ -1,0 +1,93 @@
+@keyframes line-1-reverse {
+    0% {
+      transform: rotate(45deg);
+      top: 50%;
+    }
+    70% {
+      top: 50%;
+      transform: rotate(0);
+    }
+    100% {
+      top: 0;
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes line-2 {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes line-2-reverse {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes line-3 {
+    0% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+    70% {
+      bottom: 50%;
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-45deg);
+      transform-origin: center center;
+      bottom: 50%;
+    }
+  }
+  
+  @keyframes line-3-reverse {
+    0% {
+      transform: rotate(-45deg);
+      bottom: 50%;
+    }
+    70% {
+      bottom: 50%;
+      transform: rotate(0);
+    }
+    100% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes line-1 {
+    0% {
+      top: 0;
+      transform: rotate(0);
+    }
+    70% {
+      top: calc(50% - 2px);
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(45deg);
+      top: calc(50% - 2px);
+    }
+  }
+
+  // overwrite animation of plugin a3 Lazy Load
+  .lazy-hidden, .entry img.lazy-hidden, img.thumbnail.lazy-hidden {
+    transform: translateY(100px);
+    opacity: 0 !important;
+  }
+
+  .lazy-loaded {
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity 0.75s ease 0.5s, transform 0.75s ease 0.5s !important;
+  }

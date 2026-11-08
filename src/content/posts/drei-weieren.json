@@ -1,0 +1,277 @@
+{
+  "title": "Drei Weieren Erlebnisraumbranding & Signaletik",
+  "slug": "drei-weieren",
+  "categories": [
+    "art-direction",
+    "branding",
+    "illustration",
+    "signaletik"
+  ],
+  "sortDate": "2025-11-12",
+  "tileColumns": 5,
+  "sortNumber": 0,
+  "thumbnail": "/uploads/2025/11/DSC_3005-scaled.jpg",
+  "heroImage": "/uploads/2025/11/DSC_3005-scaled.jpg",
+  "heroImageMobile": "/uploads/2025/11/DSC_3005-2-scaled-e1762433963507.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "headline": "St.Galler Naherholungsgebiet erhält eigenen Auftritt und Orientierungssystem",
+  "lead": "Die Drei Weieren sind definitiv ein Lieblingsort der St.Galler Bevölkerung. Wer meist nichts von der Pracht des Naherholungsgebiets ahnt, sind die Besuchenden des benachbarten Tourismus-Highlights und UNESCO-Weltkulturerbes Stiftsbezirk.\nIm Rahmen des Tourismus-Entwicklungskonzepts von erlebnisplan soll deshalb mit einem eigenen Markenauftritt und Orientierungssystem die Präsenz gestärkt, das Gebiet sanft aufgewertet und bestehende Erlebnisangebote sichtbar gemacht werden.\nStudio mi entwickelte eine plakative und zugleich der Charakteristik des Gebiets gerechte Lösung: Die prägnante Verbindung von 3 und W im Markenzeichen gibt die weitere Richtung für die visuelle Sprache vor. Geschwungene Wegweiser und Übersichtspläne, Spruchbänder mit Willkommensgruss spiegeln gleichzeitig die allseits präsente Bewegung in der Topografie, den Spazierenden und Schwimmenden wie auch im dominanten Element Wasser wider. Die Konzeption und Umsetzung der Signaletik und Massnahmen geschah in Zusammenarbeit mit erlebnisplan.",
+  "copyright": "Studio mi + erlebnisplan 2025",
+  "client": "St.Gallen Bodensee Tourismus, Standortförderung, Amt für Wirtschaft",
+  "credits": [
+    {
+      "job": "Zusammenarbeit",
+      "name": "erlebnisplan"
+    },
+    {
+      "job": "Produktion",
+      "name": "Grafitec"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Markenauftritt"
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/Logo.png",
+          "alt": "Logo der Drei Weieren",
+          "columns": 12
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/Icons-1.png",
+          "alt": "16 Icons, u.a.  eines Rollstuhlfahrers, Verkaufsautomaten, Bus, Besteck, Minigolf",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/Illus.png",
+          "alt": "Illustration verschiedener Gebäude wie St.Galler Stiftskirche, Badehäuser, Talstation Mühleggbahn, Bergstation Mühleggbahn, Restaurant Scheitlinsbüchel, etc.",
+          "caption": "Illustrationen signifikanter Punkte für den Übersichtsplan",
+          "columns": 7
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/Spruchband-1.png",
+          "alt": "Spruchbänder nehmen die Sprache des Logos auf und sind eine Referenz an die Topografie des Perimeters, an das Element Wasser und die zahlreichen Bewegungsmöglichkeiten in den Drei Weieren",
+          "columns": 12
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": []
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Signaletik"
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_2895-scaled.jpg",
+          "alt": "Bild eines Laternenpfahls mit Wegweisern, übersichtsplan, 3D-Logo der Drei Weieren",
+          "caption": "Portale an neuralgischen Punkten dienen zur Orientierung und als Einstieg in den Perimeter",
+          "columns": 12
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3021-1-scaled-e1762360733665.jpg",
+          "alt": "Bild des Hauptwegweisers mit dem Drei Weieren Logo",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3040-scaled.jpg",
+          "alt": "Bild eines St.Galler Stadtwegweisers und des Hauptrichtungswegweisers Drei Weieren",
+          "caption": "Geschwungene Richtungswegweiser sind ein Hinweis auf die erhöhte Lage oberhalb der Stadt",
+          "columns": 5
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3068-scaled-e1762361008502.jpg",
+          "alt": "Bild eines Übersichtsplans der Drei Weieren",
+          "columns": 3
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3059-scaled-e1762366879237.jpg",
+          "alt": "Bild der Talstation Mühleggbahn mit Beklebung der Eingangstür (Bildmarke) und übersichtsplan",
+          "caption": "Die Bildmarke als Portal  – an der denkmalgeschützten Talstation macht’s eine Folierung möglich.",
+          "columns": 8
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_2978-scaled-e1762363083491.jpg",
+          "alt": "",
+          "columns": 12
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_2813-scaled.jpg",
+          "alt": "",
+          "columns": 8
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_2920-scaled-e1762363335883.jpg",
+          "alt": "",
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_2892-scaled-e1762362617387.jpg",
+          "alt": "",
+          "columns": 12
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3314-1-scaled-e1762366596907.jpg",
+          "alt": "",
+          "caption": "Wegmarker dienen als Bestätigung",
+          "columns": 8
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3253-scaled-e1762366055951.jpg",
+          "alt": "",
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3401-scaled-e1762364388483.jpg",
+          "alt": "",
+          "columns": 3
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3321-scaled-e1762364587936.jpg",
+          "alt": "",
+          "caption": "Die Einbindung bestehender Themenwegstelen in die Signaletik war Bedingung und erfolgte durch Anbringung kleiner Wimpel.",
+          "columns": 8
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Integration Stadtsignaletik"
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3453-scaled.jpg",
+          "alt": "",
+          "caption": "In der Stadtsignaletik ist das Gebiet mit dem Synonym Dreilinden gekennzeichnet. An entsprechenden Stellen wurde um das neue Markenzeichen ergänzt.",
+          "columns": 8
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/11/DSC_3052-scaled-e1762432095448.jpg",
+          "alt": "",
+          "columns": 3
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": ""
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://3weieren.ch/\" target=\"_blank\" rel=\"noreferrer noopener\">Erlebnisraum Drei Weieren</a>"
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://www.persoenlich.com/marketing/drei-weieren-erhalten-neues-gesicht\" target=\"_blank\" rel=\"noreferrer noopener\">Beitrag auf persönlich.ch</a>"
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://www.markt-kom.com/de/kreativity/studio-mi-und-erlebnisplan-gestalten-markenauftritt-fuer-die-drei-weieren/\" target=\"_blank\" rel=\"noreferrer noopener\">Beitrag auf Markt &amp; Kommunikation</a>"
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://erlebnisplan.com/projects/besucherlenkung-erlebnisraum-drei-weieren/\" target=\"_blank\" rel=\"noreferrer noopener\">Partner: Erlebnisplan Luzern</a>"
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://fontsinuse.com/uses/76821/drei-weieren-branding-and-wayfinding\">Projekt auf Fonts in Use</a>"
+    }
+  ],
+  "seo": {
+    "title": "Drei Weieren Erlebnisraumbranding & Signaletik",
+    "description": "Ein neues Branding und Leitsystem für das St.Galler Naherholungsgebiet, in Zusammenarbeit mit Erlebnisplan Luzern"
+  }
+}

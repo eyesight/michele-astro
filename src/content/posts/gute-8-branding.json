@@ -1,0 +1,83 @@
+{
+  "title": "Durch die Nacht mit gute 8",
+  "slug": "gute-8-branding",
+  "categories": [
+    "branding",
+    "illustration",
+    "online",
+    "print"
+  ],
+  "sortDate": "2022-05-13",
+  "tileColumns": 6,
+  "sortNumber": 8,
+  "thumbnail": "/uploads/2022/05/GU8_Brand_Elemente_Zeichenfläche-1.png",
+  "heroImage": "/uploads/2022/05/GU8_Brand_Elemente_Zeichenfläche-1.png",
+  "heroImageMobile": "/uploads/2022/05/GU8_Intro_mobile_1100x1600.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Schnarchen und Schlafapnoe rauben tausenden von Betroffenen und ihren Partnern den Schlaf. Ein Beatmungsgerät muss nicht die letzte Lösung sein. gute 8 vertreibt ein medizinisch-therapeutisches Gerät aus Schweden: ein kleines Ding, so unscheinbar wie potent, das auch bei Reflux und Schluckbeschwerden helfen kann.  \n\nDiese Genesung, der positive Ausblick, soll im Branding von gute 8 spürbar werden. Der Leidensdruck bei betroffenen Menschen ist gross, gequälte Gesichter findet man jedoch keine. Stattdessen ein Naming mit – wortwörtlich – Augenzwinkern und eine bunte wie ausgewogene Farbpalette, inspiriert vom Dämmerzustand. Also der Zeit und Lichtstimmung in der wir vom Schlaf- in den Wachzustand wechseln. Der Wellness-Aspekt, der erholsamem Schlaf innewohnt, liegt klar im Fokus.",
+  "copyright": "Studio mi 2022",
+  "client": "gute 8",
+  "credits": [
+    {
+      "job": "Illustration",
+      "name": "Studio mi"
+    },
+    {
+      "job": "Fotografie",
+      "name": "kurzschuss photography"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2022/05/GU8_Flyer_1440px.jpg",
+          "alt": "",
+          "columns": 10
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2022/05/GU8_Web_2000px.png",
+          "alt": "",
+          "columns": 12
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2022/05/Business-Card-Branding-Mockup_1400px-1.jpg",
+          "alt": "",
+          "columns": 5
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2022/05/Stationery-Branding-PSD-Mockup-Vol-05-Kopie-scaled-e1743436585630.jpg",
+          "alt": "",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2022/05/Sticker-Pack.png",
+          "alt": "",
+          "columns": 5
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2022/05/GU8_Packaging-e1743437246202.jpg",
+          "alt": "",
+          "columns": 5
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Durch die Nacht mit gute 8",
+    "description": "Das Branding für gute 8 setzt den Fokus auf die Genesung Betroffener von Schnarchen und Schlafapnoe."
+  }
+}

@@ -1,0 +1,50 @@
+/*
+  Usage:
+  @include make-grid-item(col-span-item); // (on items)
+*/
+@mixin make-offset-grid-item($item-col-spread, $offset: 0, $margin-left:0, $margin-right: $margin-left, $cols-per-row:$col-count, $make-full-width: true, $margin-fix: false, $margin-fix-size: $gutter) {
+  $width: 100% / $cols-per-row * $item-col-spread;
+  $m-left: 100% / $cols-per-row * $offset;
+  padding-right: $margin-right;
+  padding-left: $margin-left;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+
+  @if($margin-fix){
+    flex-basis: calc(#{$width} + #{$margin-fix-size * 2});
+    max-width: calc(#{$width} + #{$margin-fix-size * 2});
+  } @else {
+    flex-basis: $width;
+    max-width: $width;
+  }
+  @if($margin-fix){
+    margin-left: calc(#{$m-left} - #{$margin-fix-size});
+  } @else {
+    margin-left: $m-left;
+  }
+  @if($make-full-width){
+    @if($margin-fix){
+      $mf: 100% - ($width) - ($m-left);
+      margin-right: calc(#{$mf} + #{$margin-fix-size});
+    } @else {
+      margin-right: 100% - ($width) - ($m-left);
+    }
+  }
+}
+
+/*
+  Usage:
+  @include make-grid-container(); // (on container)
+*/
+@mixin make-offset-grid-container($grid-gutter: $gutter, $direction: row, $wrap: wrap, $justify-content: flex-start, $align-content: flex-start) {
+  margin-left: ($grid-gutter / 2)*-1;
+  margin-right: ($grid-gutter / 2)*-1;
+  flex: 0 1 auto;
+  @include flexbox($direction, $wrap, $justify-content, $align-content);
+
+  @media print {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+}

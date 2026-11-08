@@ -1,0 +1,23 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+import ImageSizedBlock from './ImageSizedBlock.astro';
+import SelfHostedVideoBlock from './SelfHostedVideoBlock.astro';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'imageContainer' }>;
+const { spaceBetween, centered, images } = Astro.props;
+
+const modifiers = [spaceBetween && 'image-container--space-between', centered && 'image-container--center']
+  .filter(Boolean)
+  .join(' ');
+---
+
+<div class="content wp-block-cgb-block-mim-image-container">
+  <div class={`grid-container image-container ${modifiers}`.trim()}>
+    {
+      images.map((img) =>
+        img.type === 'selfHostedVideo' ? <SelfHostedVideoBlock {...img} /> : <ImageSizedBlock {...img} />,
+      )
+    }
+  </div>
+</div>

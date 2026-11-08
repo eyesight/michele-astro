@@ -1,0 +1,96 @@
+{
+  "title": "Allianz Suisse Personas",
+  "slug": "die-allianz-familie",
+  "categories": [
+    "illustration",
+    "print"
+  ],
+  "sortDate": "2025-11-03",
+  "tileColumns": 3,
+  "sortNumber": 3,
+  "thumbnail": "/uploads/2025/03/AS_Hero_Mobile.jpg",
+  "heroImage": "/uploads/2025/03/AS_Hero_Desktop-1-scaled.jpg",
+  "heroImageMobile": "/uploads/2025/03/AS_Hero_Mobile.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Für die Allianz Suisse entstand eine Illustrationsreihe zur Unterstützung interner Schulungen. Ziel war es, die entwickelten Personas als dreigenerationale Familie in beinahe lebensgrossem Format zum Leben zu erwecken – umgesetzt als detailreiche Pappfiguren. Der illustrative Stil, ergänzt durch sorgfältig gewählte Accessoires und Alltagsobjekte, verleiht den Charakteren Tiefe und Persönlichkeit. Visuelle Ankerpunkte fördern die Identifikation und machen es Mitarbeitenden leichter, sich intuitiv mit den Figuren und ihren Geschichten zu verbinden.",
+  "copyright": "Studio mi GmbH 2025",
+  "client": "Allianz Suisse",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2025/03/AS_Illu_Maedchen.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2025/03/AS_Illu_Familie-1-scaled.jpg",
+      "alt": "",
+      "fullWidth": true
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Gruppe-2310.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Gruppe-2309.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Gruppe-2308.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Gruppe-2311.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Hund.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Gruppe-2312.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Diego.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/03/Susanne-1.jpg",
+          "alt": "",
+          "columns": 4
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Allianz Suisse Personas",
+    "description": "Creative Concepts and Design"
+  }
+}

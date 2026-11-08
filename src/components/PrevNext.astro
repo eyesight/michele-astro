@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+}
+const { currentSlug } = Astro.props;
+
+const posts = (await getCollection('posts')).sort((a, b) => (a.data.sortNumber ?? 0) - (b.data.sortNumber ?? 0));
+const index = posts.findIndex((p) => p.data.slug === currentSlug);
+const prevPost = index > 0 ? posts[index - 1] : null;
+const nextPost = index !== -1 && index < posts.length - 1 ? posts[index + 1] : null;
+const isFirst = index === 0;
+const isLast = index === posts.length - 1;
+---
+
+<div class="prev-next">
+  <div class="content prev-next__wrapper">
+    {
+      isFirst ? (
+        <div class="prev-next__arrow prev-next__left">
+          <a class="prev" href="/" rel="prev">
+            <svg viewBox="0 0 24 24">
+              <polyline class="st0" points="10,20 2,12 10,4 " />
+              <line class="st0" x1="3" y1="12" x2="23" y2="12" />
+            </svg>
+            <span>zurück zur Übersicht</span>
+          </a>
+        </div>
+      ) : (
+        prevPost && (
+          <div class="prev-next__arrow prev-next__left">
+            <a class="prev" href={`/${prevPost.data.slug}/`} rel="prev">
+              <svg viewBox="0 0 24 24">
+                <polyline class="st0" points="10,20 2,12 10,4 " />
+                <line class="st0" x1="3" y1="12" x2="23" y2="12" />
+              </svg>
+              <span class="visually-hidden">{prevPost.data.title}</span>
+            </a>
+          </div>
+        )
+      )
+    }
+
+    <button class="totop">
+      <svg viewBox="0 0 24 24">
+        <g>
+          <polyline class="st0" points="14,20 22,12 14,4 " />
+          <line class="st0" x1="21" y1="12" x2="1" y2="12" />
+        </g>
+      </svg>
+      <span class="totop__text">to top</span>
+    </button>
+
+    {
+      isLast ? (
+        <div class="prev-next__arrow prev-next__right">
+          <a class="next" href="/" rel="next">
+            <span>zurück zur Übersicht</span>
+            <svg viewBox="0 0 24 24">
+              <g>
+                <polyline class="st0" points="14,20 22,12 14,4 " />
+                <line class="st0" x1="21" y1="12" x2="1" y2="12" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      ) : (
+        nextPost && (
+          <div class="prev-next__arrow prev-next__right">
+            <a class="next" href={`/${nextPost.data.slug}/`} rel="next">
+              <span class="visually-hidden">{nextPost.data.title}</span>
+              <svg viewBox="0 0 24 24">
+                <g>
+                  <polyline class="st0" points="14,20 22,12 14,4 " />
+                  <line class="st0" x1="21" y1="12" x2="1" y2="12" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        )
+      )
+    }
+  </div>
+</div>

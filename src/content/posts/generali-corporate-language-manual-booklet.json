@@ -1,0 +1,52 @@
+{
+  "title": "Generali Corporate Language Booklet",
+  "slug": "generali-corporate-language-manual-booklet",
+  "categories": [
+    "editorial",
+    "illustration",
+    "print"
+  ],
+  "sortDate": "2019-12-28",
+  "tileColumns": 4,
+  "sortNumber": 14,
+  "thumbnail": "/uploads/2019/12/home_GEN_Cover_420px.jpg",
+  "heroImage": "/uploads/2019/12/GEN_Innenseiten_02_2000px.jpg",
+  "heroImageMobile": "/uploads/2019/12/GEN_Mob_Hero.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Eine grosse Marke, täglich in direktem Kontakt mit Menschen. Diverse Guides und Schulungs-Präsentationen mit dem Zweck, Mitarbeiter auf eine einheitliche Sprache zu sensibilisieren und zu schulen. So die Ausgangslage für den Corporate Language Guide der Generali Schweiz. Mit einem kompakten und übersichtlichen Booklet, eingeteilt in die drei Kapitel «Sprachkonzept», «Sprachstil» und «sprachliche Feinheiten» wurde ein Nachschlagewerk für den täglichen Gebrauch geschaffen.",
+  "copyright": "gyselroth 2019",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/GEN_IHVZ.jpg",
+      "alt": "",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/GEN_Cover_multi_2000px.jpg",
+      "alt": "Übersicht der Cover in den drei Sprachen Deutsch, Französisch und Italienisch",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/GEN_Numbrs.jpg",
+      "alt": "Die Illustration der Zahlen der Kapitel 1-3",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/GEN_illu.jpg",
+      "alt": "Illustration von zwei Frauen, eine sagt \"die GENERALI\", die andere korrigiert zu \"Generali\"",
+      "fullWidth": false
+    }
+  ],
+  "seo": {
+    "title": "Generali Corporate Language Manual im kompakten Booklet",
+    "description": "Das kompakte und übersichtliche Booklet führt als Manual in drei Schritten durch die Welt der Corporate Language von Generali Schweiz."
+  }
+}

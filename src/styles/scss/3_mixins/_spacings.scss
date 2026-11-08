@@ -1,0 +1,155 @@
+/*
+  Usage:
+  fake margin-bottom 
+*/
+@mixin ld-margin-bottom($margin: $gutter, $selector: '*'){
+  & + #{$selector}{
+    margin-top: $margin;
+  }
+}
+
+/*
+  Usage:
+  @include spacing(type, spacing-variable);
+*/
+@mixin spacing($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}: $spacing-map;
+  }
+}
+
+/*
+  Usage:
+  @include spacing-top-bottom(type, spacing-variable);
+*/
+@mixin spacing-top-bottom($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}-top: $spacing;
+        #{$type}-bottom: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}-top: $spacing;
+          #{$type}-bottom: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}-top: $spacing-map;
+    #{$type}-bottom: $spacing-map;
+  }
+}
+
+/*
+  Usage:
+  @include spacing-top(type, spacing-variable);
+*/
+@mixin spacing-top($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}-top: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}-top: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}-top: $spacing-map;
+  }
+}
+
+/*
+  Usage:
+  @include spacing-bottom(type, spacing-variable);
+*/
+@mixin spacing-bottom($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}-bottom: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}-bottom: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}-bottom: $spacing-map;
+  }
+}
+
+/*
+  Usage:
+  @include spacing-left-right(type, spacing-variable);
+*/
+@mixin spacing-left-right($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}-left: $spacing;
+        #{$type}-right: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}-left: $spacing;
+          #{$type}-right: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}-left: $spacing-map;
+    #{$type}-right: $spacing-map;
+  }
+}
+
+/*
+  Usage:
+  @include spacing-left(type, spacing-variable);
+*/
+@mixin spacing-left($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}-left: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}-left: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}-left: $spacing-map;
+  }
+}
+
+/*
+  Usage:
+  @include spacing-right(type, spacing-variable);
+*/
+@mixin spacing-right($type, $spacing-map) {
+  @if is-map($spacing-map){
+    @each $spacing-breakpoint, $spacing in $spacing-map {
+      @if $spacing-breakpoint == null {
+        #{$type}-right: $spacing;
+      } @else {
+        @include media-breakpoint-up($spacing-breakpoint) {
+          #{$type}-right: $spacing;
+        }
+      }
+    }
+  } @else {
+    #{$type}-right: $spacing-map;
+  }
+}

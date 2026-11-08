@@ -1,0 +1,13 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'video' }>;
+const { provider, videoUrl, embedHtml, fullWidth } = Astro.props;
+
+const html =
+  embedHtml ??
+  `<iframe src="${videoUrl}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${provider} video"></iframe>`;
+---
+
+<div class={`embedVideo${fullWidth ? ' embedVideo--full-with' : ''}`} set:html={html} />

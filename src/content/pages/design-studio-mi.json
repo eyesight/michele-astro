@@ -1,0 +1,25 @@
+{
+  "frontpageTile": {
+    "label": "About",
+    "categorySlug": "about",
+    "thumbnail": "/uploads/2025/03/MI_2024_469-scaled.jpg",
+    "tileColumns": 4,
+    "sortNumber": 5
+  },
+  "title": "Im Spannungsfeld von Pragmatismus und Leidenschaft für Design",
+  "slug": "design-studio-mi",
+  "template": "withImage",
+  "featuredImage": "/uploads/2025/03/MI_2024_706-scaled.jpg",
+  "lead": "... immer mit klarem Kundenfokus und dem Drang, aus jedem Detail das Maximum an Ästhetik herauszukitzeln: das bin ich, Michèle Imhof. Über 15 Jahre in Agenturen von 3 bis 150 Köpfen, ein Abstecher in einen Konzern und 2020 die Gründung meines Studios zeigen: ich begleite Projekte jeder Grösse mit dem gleichen Enthusiasmus. Mein Herzblut: Identitäten spür- und sichtbar zu machen.",
+  "credits": [
+    {
+      "job": "Fotografie",
+      "name": "Jonas Weibel"
+    }
+  ],
+  "body": [],
+  "seo": {
+    "title": "Studio mi GmbH, das ist ein Design-Studio in Zürich",
+    "description": "Studio mi Design-Studio in Zürich: im Spannungsfeld von Pragmatismus und Leidenschaft für Design, immer mit klarem Kundenfokus."
+  }
+}

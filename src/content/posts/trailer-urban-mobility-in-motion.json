@@ -1,0 +1,58 @@
+{
+  "title": "Urban mobility in motion",
+  "slug": "trailer-urban-mobility-in-motion",
+  "categories": [
+    "art-direction"
+  ],
+  "sortDate": "2019-12-21",
+  "tileColumns": 7,
+  "sortNumber": 17,
+  "thumbnail": "/uploads/2019/12/Bildschirmfoto-2025-03-28-um-13.17.36.png",
+  "heroImage": "/uploads/2019/12/Bildschirmfoto-2025-03-28-um-13.17.36.png",
+  "heroImageMobile": "/uploads/2019/12/zf_mobhero.mp4",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Nach dem Zusammenschluss mit TRW hat sich ZF zum Pionier in Sachen Automated Driving manifestiert. Die Entwicklung von Kamera- und Sensoren-Technologie resultiert in innovativen Assistenzsystemen. Die neuen Möglichkeiten werden an der PKW IAA anhand des «ZF Smart Urban Vehicle» in Frankfurt demonstriert und sollen im Vorfeld auf Social Media angeteast werden. Ein ab­straktes Thema in urbanem Umfeld verlangt nach ebendieser Umsetzung. Die zwei «Liquid Dancer» Kalli Tasaridou und Christian «Robozee» Zacharas von Flying Steps Entertainment) verkörpern, unterstützt von Motion Graphics, einen der jeweiligen ­Megatrends.",
+  "copyright": "Publicis Pixelpark 2015",
+  "credits": [
+    {
+      "job": "Produktion",
+      "name": "Mutter und Vater"
+    },
+    {
+      "job": "Regie",
+      "name": "Sophie Gateau"
+    },
+    {
+      "job": "Schnitt",
+      "name": "Fabian Spahl"
+    },
+    {
+      "job": "Tänzer",
+      "name": "Kalli Tasaridou, Robozee (Red Bull Flying Steps)"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "embed",
+      "provider": "vimeo",
+      "url": "https://player.vimeo.com/video/139252686?dnt=1&app_id=122963"
+    },
+    {
+      "type": "embed",
+      "provider": "vimeo",
+      "url": "https://player.vimeo.com/video/139252688?dnt=1&app_id=122963"
+    },
+    {
+      "type": "embed",
+      "provider": "vimeo",
+      "url": "https://player.vimeo.com/video/139252687?dnt=1&app_id=122963"
+    }
+  ],
+  "seo": {
+    "title": "Liquid Dance Trailer \"Urban Mobility in Motion\" für ZF",
+    "description": "Die Trailer-Serie \"Urban Mobility in Motion\" wirbt für den Auftritt von ZF an der PKW IAA. Tänzer visualisieren das Concept Car \"ZF Smart Urban Vehicle\"."
+  }
+}

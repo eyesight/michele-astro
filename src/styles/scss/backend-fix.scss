@@ -1,0 +1,26 @@
+html {
+  font-size: 10px;
+} 
+
+.post-type-page {
+  .editor-styles-wrapper .editor-post-title__input, .editor-styles-wrapper .post__title {
+    max-width: 100%;
+    width: 100%;
+    opacity: .5;
+  }
+
+  .editor-post-title__block {
+    position: relative;
+    width: calc(100% - 10px); 
+    border: 1px dashed #1dd1a1;
+    margin: 5px;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 10px; 
+      content: 'Title field will not be visible on page';
+    }
+  }
+}

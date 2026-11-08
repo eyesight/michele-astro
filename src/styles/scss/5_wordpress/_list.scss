@@ -1,0 +1,28 @@
+.list {
+    @include ld-margin-bottom($spacing-between-sections);
+    
+    &__wrapper{
+        @include make-grid-item($col-span-tile-6);
+        
+        @include sm-max(){
+            @include make-grid-item($col-span-content);
+        }
+    }
+    &__title{
+        @include font-size($font-settings-body);
+        @include type-face($type-face, $font-weight-bold);
+    }
+    
+    &__item {
+        @include font-size($font-settings-list);
+    }
+
+    &__container {
+        justify-content: flex-start;
+    }
+
+    .title-image__wrapper &.content {
+        width: auto;
+        max-width: none;
+    }
+}

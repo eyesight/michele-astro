@@ -1,0 +1,65 @@
+{
+  "title": "Markenauftritt Anja florales Design",
+  "slug": "anja-florales-design",
+  "categories": [
+    "art-direction",
+    "branding",
+    "print"
+  ],
+  "sortDate": "2022-09-02",
+  "tileColumns": 7,
+  "sortNumber": 7,
+  "thumbnail": "/uploads/2020/01/Anja_Logo_Blume_1440x1060.jpg",
+  "heroImage": "/uploads/2022/09/Anja_Logo_Blume_2200.jpg",
+  "heroImageMobile": "/uploads/2022/09/Anja_Logo_Blume_Mobile_1100x1600.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Anja steht für eine neue Art florales Design. Steife Bouquets wird man hier keine finden. Stattdessen eine harmonisch-wilde Kombination aus bekannten und exotischen Blumen und Pflanzen. Der Auftritt soll die Handschrift der Floristin ergänzen ohne an Sichtbarkeit einzubüssen. Plakativität ist ein Muss, so wird das Logo nur mit Kontaktangaben ergänzt. Die Logo-Schrift, trotz Ihrer klassizistischer Qualifikation, wird dank gezielten Eingriffen zur organisch anmutenden Wortmarke. Die reduzierte, kontrastreiche Farbwahl hebt sich wahlweise ab oder schmiegt sich an das florale Design an.",
+  "copyright": "Studio mi",
+  "client": "Anja Florales Design",
+  "credits": [
+    {
+      "job": "Terrazzo",
+      "name": "Freepik"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2022/09/Anja_Mockup_Stationery_Terrazzo-scaled.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/09/ANJ_Kombi_2000px.png",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/09/Flowers-Packaging-Mockup-Set-by-Creatsy-3-Kopie-scaled.jpg",
+      "alt": "Anja florales Design erhält einen organischen jedoch plakativen Auftritt dank einer Mischung aus klassizistischer Schrift und kontrastreichen Farben.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/09/Anja_Logo_1440x960.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/09/ANJ_TypoFarbe.jpg",
+      "alt": "",
+      "fullWidth": false
+    }
+  ],
+  "seo": {
+    "title": "Markenauftritt Anja florales Design",
+    "description": "Anja florales Design erhält einen organischen jedoch plakativen Auftritt dank einer Mischung aus klassizistischer Schrift und kontrastreichen Farben."
+  }
+}

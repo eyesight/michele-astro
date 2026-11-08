@@ -1,0 +1,65 @@
+{
+  "title": "Konzertplakat Messe in C-Dur, Beethoven",
+  "slug": "beethoven-plakat",
+  "categories": [
+    "art-direction",
+    "print"
+  ],
+  "sortDate": "2022-05-03",
+  "tileColumns": 5,
+  "sortNumber": 9,
+  "thumbnail": "/uploads/2022/05/q-zhang-me7sgSQqFS8-unsplash-Kopie-scaled.jpg",
+  "heroImage": "/uploads/2022/04/Mockup_kombi.png",
+  "heroImageMobile": "/uploads/2022/05/q-zhang-me7sgSQqFS8-unsplash-Kopie-scaled.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Die Chöre Rohrdorf und St.Sebastian Wettingen planten 2020, wie so viele Musiker zum Beethoven-Jubiläumsjahr, die Aufführung eines seiner grossen Werke. \nDie Messe in C-Dur, für damalige Zeit ein äusserst modernes Werk, wurde auf Beethovens Wunsch nach einer höheren Reichweite vom Lateinischen ins Deutsche übersetzt. Gemäss Berichten seines Biografen Anton Schindler ist Beethoven von der Übersetzung begeistert: «So habe ich gedacht und gefühlt, wie diese Worte es bezeichnen, als ich dieses Werk schrieb!» Fast zuletzt findet sich im Credo der Satz «Vom Aufgang der Sonne bis zu ihrem Niedergang, sei gelobt des Herren Name hin, bis zu allen Zeiten, singt ihr Erden, glänzt ihr Sonnen!». Die Elemente, insbesondere die Sonne und das Licht, werden mehrfach zur Umschreibung der Herrlichkeit Gottes herbeigezogen. In der hier gezeigten visuellen Übersetzung bilden Sonnenaufgang und -untergang eine symbiotische Bühne für den technisch anmutenden Schriftzug – ein Zitat an die Modernität dieser Messe.",
+  "copyright": "Studio mi 2022",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "selfHostedVideo",
+      "src": "/uploads/2022/05/Animation_Sonne.mp4",
+      "autoplay": true,
+      "loop": true,
+      "muted": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/05/STSEB_text.png",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/04/Sonnen_Zitat_BGless_erkl-1.png",
+      "alt": "Zitat aus der Beethoven-Messe in C.\nVom Aufgang der Sonne bis zu ihrem Niedergang, sei gelobt des Herren Name hin, bis zu allen Zeiten, singt ihr Erden, glänzt ihr Sonnen!",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/04/Mockup_kombi-1.png",
+      "alt": "Zwei Ansichten des Plakats für die Beethoven-Messe in C-Dur. Links ist das Design an sich zu sehen, rechts in einem Steler vor einem Gebäude. ",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/04/Landesmuseum_Pla.jpg",
+      "alt": "Drei Plakatstellen in einer Reihe vor dem Landesmuseum Zürich. Jede Stele zeigt das Plakat für die Beethoven-Messe",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/05/BTN_Insta_02-1-1440x325.png",
+      "alt": "",
+      "fullWidth": false
+    }
+  ],
+  "seo": {
+    "title": "Konzertplakat Messe in C-Dur, Beethoven",
+    "description": "Plakat zum 250. Geburtstag von Beethoven. Das Design nimmt Bezug auf eine Passage der Messe in C-Dur: «Vom Aufgang der Sonne bis zu ihrem Niedergang»."
+  }
+}

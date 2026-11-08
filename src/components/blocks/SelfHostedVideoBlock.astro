@@ -1,0 +1,11 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'selfHostedVideo' }>;
+const { src, poster, autoplay, loop, muted } = Astro.props;
+---
+
+<figure class="wp-block-video">
+  <video src={src} poster={poster} autoplay={autoplay} loop={loop} muted={muted} playsinline />
+</figure>

@@ -1,0 +1,10 @@
+/*
+  The higher in list, the higher the z-index
+  Usage: z-index: z('overlay')
+  More information: https://engageinteractive.co.uk/blog/top-10-scss-mixins#z-index
+*/
+
+$z-indexes: (
+  "overlay",
+  "header"
+) !default;

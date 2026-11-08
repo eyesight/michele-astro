@@ -1,0 +1,79 @@
+{
+  "title": "Branding & Website für FINTA-Verein SisInBiz",
+  "slug": "sisinbiz",
+  "categories": [
+    "art-direction",
+    "branding",
+    "online"
+  ],
+  "sortDate": "2026-04-22",
+  "tileColumns": 6,
+  "sortNumber": 1,
+  "thumbnail": "/uploads/2026/04/Digital-Devices-Mockup-Vol-4-Freebies_5-1.jpg",
+  "heroImage": "/uploads/2026/04/Digital-Devices-Mockup-Vol-4-Freebies_5-1.jpg",
+  "heroImageMobile": "/uploads/2026/04/SIB_Web_Mob.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "headline": "Das FINTA Netzwerk der CH-Musikbranche",
+  "lead": "Seit 2017 vernetzt SisInBiz FINTA-Personen hinter den Kulissen der Schweizer Musikindustrie. Mit der Vereinsgründung 2026 war der Moment gekommen, deutlich nach aussen sichtbar zu werden – mit einer Identität, die dem Netzwerk gerecht wird. Die Community als lebendiges Gefüge: wie sie sich formt, erweitert und gegenseitig trägt, wird als animiertes Element auf der Website erlebbar. Die Bildmarke trägt diese Idee als organische Form weiter. Die Wortmarke setzt den Gegenpol – präsent, direkt, unmissverständlich. Dieser Kontrast zieht sich durch das gesamte Erscheinungsbild: zwischen verspielten Serifen und kraftvollen Kursiven, zwischen aufgeladenem Rosa und starkem Bordeaux.",
+  "copyright": "Studio mi 2026",
+  "client": "SisInBiz",
+  "credits": [],
+  "backgroundColor": "#f0bad9",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "imageContainer",
+      "spaceBetween": true,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2026/04/Unbenannt-1.gif",
+          "alt": "",
+          "caption": "HTML-basierte, responsive Animation",
+          "columns": 8
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2026/04/Bildschirmfoto-2026-04-17-um-08.25.19.png",
+          "alt": "",
+          "columns": 3
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2026/04/SIB_VKarte_03_rafi.jpg",
+          "alt": "",
+          "columns": 5
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2026/04/SIB_Grusskarten_V3.png",
+          "alt": "",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2026/04/SIB_Sticker_V2.jpg",
+          "alt": "",
+          "columns": 4
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2026/04/SIB_Sticker_V1.jpg",
+          "alt": "",
+          "columns": 5
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://fontsinuse.com/uses/77222/sisinbiz\">Projekt auf Fonts in Use</a>"
+    }
+  ],
+  "seo": {
+    "title": "Branding & Website für FINTA-Verein SisInBiz",
+    "description": "Creative Concepts and Design"
+  }
+}

@@ -1,0 +1,42 @@
+.site-404{
+  @include full-width;
+  height: 100%;
+  @include flexbox(row, wrap, center, center);
+  @include md-max(){
+    @include flexbox(column, wrap, center, center);
+  }
+
+  .title-h1{
+    @include make-grid-item($col-span-tile-2, $margin-bottom: 0);
+    @include md-max(){
+      @include make-grid-item($col-span-tile-4, $margin-bottom: 0);
+    }
+    @include sm-max(){
+      @include make-grid-item($col-span-content, $margin-bottom: 0); 
+    }
+    text-align: center;
+  }
+
+  .video{
+    position: absolute;
+    right: 0;
+    height: auto;
+    bottom: -100px;  
+    left: 0px; 
+    width: 300px;
+    min-width: 300px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    
+    @media screen and (max-width: 600px) {
+      width: 200px;  
+      bottom: -100px;  
+      left: -50px; 
+    }
+  }
+  
+  .title-h1__button:hover .video{
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+}

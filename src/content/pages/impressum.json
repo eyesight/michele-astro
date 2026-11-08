@@ -1,0 +1,22 @@
+{
+  "title": "Impressum",
+  "slug": "impressum",
+  "template": "leftIndent",
+  "body": [
+    {
+      "type": "text",
+      "text": "<strong>Programmierung<br></strong>cfriedri.ch<br><br><strong>Kontaktadresse</strong><br>Studio mi GmbH<br>Gasometerstrasse 36<br>8005 Zürich<br>Schweiz<br>michele(at)studio-mi.ch<br>0797980955<br><br><strong>Vertretungsberechtigte Personen<br></strong>Michèle Imhof, Geschäftsführerin<br><br><strong>Handelsregistereintrag</strong><br>Eingetragener Firmenname: Studio mi GmbH<br>Nummer: CHE-276.495.178<br><br><strong>Haftungsausschluss (Disclaimer)</strong><br><strong>1. Inhalt der Website</strong><br>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Dennoch übernimmt Studio mi keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Informationen. Die Nutzung der Inhalte erfolgt auf eigene Verantwortung.<br><strong>2. Haftung für Links</strong><br>Diese Website enthält Links zu externen Websites Dritter. Studio mi hat keinen Einfluss auf deren Inhalte und übernimmt keine Haftung für deren Richtigkeit, Aktualität oder Rechtmässigkeit. Zum Zeitpunkt der Verlinkung wurden die Seiten geprüft; eine permanente inhaltliche Kontrolle ist jedoch nicht möglich. Bei Bekanntwerden von Rechtsverstössen werden die entsprechenden Links umgehend entfernt.<br><strong>3. Urheberrecht</strong><br>Die auf dieser Website veröffentlichten Inhalte, Bilder und Designs unterliegen dem Urheberrecht und dürfen ohne ausdrückliche Genehmigung von Studio mi nicht vervielfältigt, verbreitet oder anderweitig genutzt werden. Falls Inhalte Dritter verwendet wurden, wurden die entsprechenden Rechte beachtet. Sollten dennoch Urheberrechtsverletzungen auftreten, bitten wir um einen Hinweis – betroffene Inhalte werden umgehend entfernt oder angepasst.<br><strong>4. Haftung für technische Fehler</strong><br>Studio mi übernimmt keine Gewähr für die jederzeitige Verfügbarkeit der Website sowie für technische Fehler oder Schäden, die durch die Nutzung der Website entstehen könnten.<br><strong>5. Änderungen und Aktualisierungen</strong><br>Studio mi behält sich das Recht vor, Inhalte dieser Website jederzeit zu ändern, zu ergänzen oder zu löschen, ohne dies gesondert anzukündigen."
+    },
+    {
+      "type": "text",
+      "text": ""
+    },
+    {
+      "type": "text",
+      "text": ""
+    }
+  ],
+  "seo": {
+    "title": "Impressum"
+  }
+}

@@ -1,0 +1,12 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'imageSized' }>;
+const { src, alt, caption, columns } = Astro.props;
+---
+
+<figure class={`image image--col-${columns}`}>
+  <img src={src} alt={alt} />
+  {caption && <figcaption class="image__caption">{caption}</figcaption>}
+</figure>

@@ -1,0 +1,26 @@
+/*
+  Usage:
+  @include make-grid-item(col-span-item); // (on items)
+*/
+@mixin make-grid-item($item-col-spread, $cols-per-row:$col-count, $margin-side:$gutter, $margin-bottom:$margin-side, $col-count-push: 0) {
+  width: calc((100% / #{$cols-per-row}) * #{$item-col-spread});
+  margin-bottom: $margin-bottom;
+  @if $col-count-push == 0 {
+    margin-left: 0;
+  } @else {
+    margin-left: calc((100% / #{$cols-per-row}) * #{$col-count-push});
+  }
+  padding-right: $margin-side / 2;
+  padding-left: $margin-side / 2;
+  box-sizing: border-box;
+}
+
+/*
+  Usage:
+  @include make-grid-container(); // (on container)
+*/
+@mixin make-grid-container($grid-gutter: $gutter, $direction: row, $wrap: wrap, $justify-content: flex-start, $align-content: flex-start) {
+  margin-left: ($grid-gutter / 2)*-1;
+  margin-right: ($grid-gutter / 2)*-1;
+  @include flexbox($direction, $wrap, $justify-content, $align-content);
+}

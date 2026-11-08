@@ -1,0 +1,52 @@
+{
+  "title": "Germania Flug AG wird zu Chair Airlines AG",
+  "slug": "chair-airlines-branding",
+  "categories": [
+    "art-direction",
+    "branding",
+    "illustration"
+  ],
+  "sortDate": "2019-12-23",
+  "tileColumns": 9,
+  "sortNumber": 11,
+  "thumbnail": "/uploads/2019/12/chair_Movie_FULLHD_short.gif",
+  "heroImage": "/uploads/2019/12/chair_Flugzeug_2000px.jpg",
+  "heroImageMobile": "/uploads/2019/12/chair_mobhero_1100x1600.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Wie ein Phönix aus der Asche steigt die Germania Flug AG nach der Insolvenz 2019 neu als Chair Airlines in den Himmel. Der Name, der sinnbildlich für den Sitzplatz im Flugzeug steht, lässt auf eine neue, aufgeschlossene Haltung schliessen. Ein junges, dynamisches Unternehmen, dessen Identität sich nicht in starre Formen pressen lässt. Das Prinzip eines flexibel einsatzbaren «Superzeichens» erlaubt viel Freiheit in der Gestaltung und wird Träger von Bild und Botschaft.",
+  "copyright": "Branders Group 2019",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/chair_Ins_Img_2000x1100.jpg",
+      "alt": "Inserat mit Image-Botschaft: Beach chair, park bench or family sofa? We fly you there.",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/chair_billboard_2000px.jpg",
+      "alt": "Langes Billboard an einer Wand mit der Message \"Take a seat and fly\", einem Meeresbild von oben, dem Claim \"Switzerland's freshest airline\" und dem chair-Logo.",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/chair_Safetycard_2000px_05.jpg",
+      "alt": "Neues Design der Safety Cards mit komplett neuen Illustrationen",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/chair_accessories_koff_2000px.jpg",
+      "alt": "Bilder diverser Umsetzungen: Baggage-Tag, Brezel-Verpackung, Becher und Foulard",
+      "fullWidth": true
+    }
+  ],
+  "seo": {
+    "title": "Germania Flug AG erhält neues Branding als Chair Airlines",
+    "description": "Chair Airlines steigt nach der Insolvenz der Germania mit einem neuen Branding wie ein Phönix aus der Asche in den Himmel."
+  }
+}

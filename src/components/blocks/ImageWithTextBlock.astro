@@ -1,0 +1,19 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'imageWithText' }>;
+const { src, alt, heading, text } = Astro.props;
+---
+
+<div class="content image-with-text">
+  <div class="grid-container image-with-text__container">
+    <figure class="image-with-text__img">
+      <img src={src} alt={alt} />
+    </figure>
+    <div class="image-with-text__text">
+      {heading && <p class="image-with-text__cat" set:html={heading} />}
+      <p class="image-with-text__txt" set:html={text} />
+    </div>
+  </div>
+</div>

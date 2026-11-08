@@ -1,0 +1,53 @@
+---
+interface Props {
+  title: string;
+  headline?: string;
+  lead?: string;
+  copyright?: string;
+  client?: string;
+  credits: { job: string; name: string }[];
+}
+const { title, headline, lead, copyright, client, credits } = Astro.props;
+const hasCredits = credits.length > 0 || !!copyright;
+---
+
+<div class="title-lead sticky" data-sticky data-sticky-wrap>
+  <div class="content title-lead__content">
+    <div class="grid-offset-container title-lead__container">
+      <div class="title-lead__wrapper">
+        <h1 class="title-lead__title">{title}</h1>
+        {headline && <p class="title-lead__headline">{headline}</p>}
+        {lead && <p class="title-lead__lead">{lead}</p>}
+      </div>
+
+      {
+        hasCredits && (
+          <div class="title-lead__categories-wrapper">
+            <div class="title-lead__credits-container">
+              <div class="title-lead__credit-item">
+                {credits.map((c) => (
+                  <p class="title-lead__text">
+                    <span class="title-lead__text title-lead__text--bold">{c.job}: </span>
+                    {c.name}
+                  </p>
+                ))}
+                {copyright && <p class="title-lead__text">©{copyright}</p>}
+              </div>
+            </div>
+          </div>
+        )
+      }
+
+      {
+        client && (
+          <div class="title-lead__client-wrapper">
+            <p class="title-lead__text">
+              <span class="title-lead__text title-lead__text--bold">Kunde: </span>
+              {client}
+            </p>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</div>

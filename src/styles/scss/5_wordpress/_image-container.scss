@@ -1,0 +1,24 @@
+.image-container {
+    @include flexbox();
+    @include ld-margin-bottom($spacing-between-sections/2);
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections/4);
+        @include ld-margin-bottom($spacing-between-sections/2, '.footer');
+    }
+
+    .wp-block-video {
+        @include make-grid-item(12, $margin-bottom: $spacing-between-images);
+        
+        @include md-max(){
+            @include make-grid-item(12, $margin-bottom: $spacing-between-images-s);
+        }
+    }
+}
+
+.image-container--space-between {
+    justify-content: space-between;
+}
+
+.image-container--center {
+    justify-content: center;
+}

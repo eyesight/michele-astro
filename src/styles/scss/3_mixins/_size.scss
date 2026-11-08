@@ -1,0 +1,9 @@
+/*
+  Usage:
+  @include size(width unit, height unit);
+*/
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+

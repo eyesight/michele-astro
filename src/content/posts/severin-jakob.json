@@ -1,0 +1,82 @@
+{
+  "title": "Markenauftritt Severin Jakob",
+  "slug": "severin-jakob",
+  "categories": [
+    "art-direction",
+    "branding",
+    "online",
+    "print"
+  ],
+  "sortDate": "2022-01-11",
+  "tileColumns": 6,
+  "sortNumber": 4,
+  "thumbnail": "/uploads/2023/01/SJA_Cover_04_1400px.jpg",
+  "heroImage": "/uploads/2023/01/Studio-mi-Referenz-SJA3482_bearb.jpg",
+  "heroImageMobile": "/uploads/2023/01/SJA_Intro_Mob_1100x1600.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "In Geschichten in Form von Reportagen und intimen Portraits liegt der Fokus von Severin Jakobs Arbeit. Momentaufnahmen einer Bootsfahrt, Das Licht- und Schattenspiel auf Drahtseilen oder der Arbeitsprozess einer Bäckerin. Severins Arbeit ist nah und authentisch, spricht für sich selber. Sein neuer Auftritt ist entsprechend dezent gehalten. Grosszügige Farbflächen funktionieren als Bühne für Logo bzw. Fotografie, das wiederkehrende Gestaltungselement des weissen Balkens dient zur Vermittlung von textlichen Inhalten und ist gleichzeitig ein Zitat der Ränder der frühen analogen Fotografie",
+  "copyright": "Studio mi 2023",
+  "client": "Severin Jakob",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2023/01/SJA_Vkarte_Brief.png",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/08/SJA_Grusskarte.png",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "embed",
+      "provider": "vimeo",
+      "url": "https://player.vimeo.com/video/1071078671?dnt=1&app_id=122963"
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/08/SJA_Typo_2000-scaled.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2022/08/SJA_Logos_2000-scaled.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": true,
+      "images": [
+        {
+          "type": "selfHostedVideo",
+          "src": "/uploads/2023/01/SJA_Ani_Balken-1.mp4",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"http://severinjakob.ch\" target=\"_blank\" rel=\"noreferrer noopener\">severinjakob.ch</a>"
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://fontsinuse.com/uses/76822/severin-jakob-branding\">Projekt auf Fonts in Use</a>"
+    }
+  ],
+  "seo": {
+    "title": "Markenauftritt Severin Jakob",
+    "description": "Severin Jakobs Reportagen und intime Porträts fangen authentische Momente ein. Sein neuer von Studio mi GmbH gestalteter Markenauftritt spiegelt diese Nähe wider – mit großzügigen Farbflächen und einem gestalterischen Zitat analoger Fotografie."
+  }
+}

@@ -1,0 +1,161 @@
+$space-between-title-lead: 80px;
+$space-between-title-lead-s: 30px;
+$space-between-lead-credits-s: 65px;
+$space-between-credits-title: 130px;
+
+.title-lead {
+    @include ld-margin-bottom(0, '.bg-white');
+    @include ld-margin-bottom($spacing-between-sections);
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections/2);
+    }
+
+    background-color: rgba($color-blue, 0.9);
+    min-height: 100vh;
+
+    &__container{
+        padding: $spacing-header-plus-space 0 $spacing-between-sections 0;
+        @include sm-max(){
+            padding: 95px 0 135px 0;
+            @include flexbox(column, wrap, flex-start, flex-start);
+        }
+    }
+
+    &__categories-wrapper{
+        @include make-grid-item($col-span-tile-8, $margin-bottom: $space-between-credits-title);
+        @include font-size($font-settings-infotext);
+        order: 2;
+        
+        @include md-max(){
+            @include make-grid-item($col-count, $margin-bottom: $space-between-credits-title);
+            padding-top: 8px;
+            order: 3;
+        }
+        
+        @include sm-max(){
+            @include make-grid-item($col-count);
+            padding-top: 0;
+        }
+    }
+
+    &__categories-container{
+        @include flexbox();
+        @include type-face($type-face, $font-weight);
+        @include font-size($font-settings-infotext);
+        @include ld-margin-bottom($gutter);
+        a{
+            @include font-size($font-settings-infotext);
+        }
+    }
+
+    &__credits-container{
+        @include ld-margin-bottom($gutter);
+    }
+    
+    &__credit-item{
+        @include flexbox();
+    }
+
+    &__client-wrapper {
+        order: 1;
+        @include make-grid-item($col-span-tile-4, $margin-bottom: $space-between-credits-title);
+        display: flex;
+        
+        @include md-max(){
+            @include make-grid-item($col-count, $margin-bottom: 40px);
+            margin-bottom: 40px;
+        }
+    }
+    
+    &__text{
+        @include font-size($font-settings-infotext);
+        @include ld-margin-bottom(0);
+        width: 100%;
+    }
+
+    &__text--bold {
+        font-weight: $font-weight-bold;
+    }
+
+    &__wrapper{
+        @include make-grid-item($col-count);
+        order: 4;
+        
+        @include md-max(){
+            order: 2;
+            margin-bottom: $space-between-lead-credits-s;
+        }
+    }
+
+    &__title{
+        @include type-face($type-face-title, $font-weight);
+        @include font-size($font-settings-h2-article);
+        @include ld-margin-bottom($space-between-title-lead);
+        @include md-max(){
+            @include ld-margin-bottom($space-between-title-lead-s);
+        }
+    }
+    
+    &__categories{ 
+        @include ld-margin-bottom($gutter);
+        @include ld-margin-bottom(0, '.title-lead__categories');
+        @include font-size($font-settings-infotext);
+
+        padding-left: 8px;
+
+        &:first-of-type{
+            padding-left:0;
+        }
+    }
+
+    &__headline,
+    &__lead {
+        @include type-face($type-face, $font-weight);
+        @include font-size($font-settings-lead);
+        @include make-grid-item($col-span-tile-8, $col-count-push: 0);      
+        
+        @media (max-width: map-get($layout-breakpoints, lg)) {
+            @include make-grid-item($col-count, $margin-side:0);
+        }
+    }
+    
+    &__headline {
+        @include type-face($type-face, $font-weight);
+        @include font-size($font-settings-headline);
+        margin-bottom: 0;
+        @include ld-margin-bottom(19px, '.title-lead__lead');
+        
+        @include md-max(){
+            @include ld-margin-bottom(13px, '.title-lead__lead');
+        }
+    }
+
+    &__copyright-wrapper{
+       order: 3;
+       @include make-grid-item($col-span-tile-4, $margin-bottom: $space-between-credits-title);
+
+       @include md-max(){
+            order: 4;
+            margin-bottom: 0
+        }
+    }
+
+    &__copyright{
+        @include type-face($type-face, $font-weight);
+        @include font-size($font-settings-infotext);
+    }
+
+    &__image{
+        margin-right: (100% / 12);
+        @include make-grid-item($col-span-tile-3, $margin-bottom: 0);
+            
+        @include sm-max(){
+            margin-right: 0; 
+            @include make-grid-item($col-count, $margin-bottom: 0);
+        }
+    }
+
+    &__img{
+        width: 100%;
+    }
+}

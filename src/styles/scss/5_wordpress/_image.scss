@@ -1,0 +1,100 @@
+.image,
+.wp-block-image,
+.wp-block-video {
+    @include ld-margin-bottom($spacing-between-sections/2);
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections/4);
+        @include ld-margin-bottom($spacing-between-sections/2, '.footer');
+    }
+    img{
+        width: 100%;
+    }
+    
+    figcaption{
+        display: none;
+    }
+    
+    .image-container & {
+        @include ld-margin-bottom(0);
+    }
+}
+
+.image .image__caption {
+    display: block;
+    color: var(--mim-text-color);
+    @include font-size($font-settings-caption);
+    margin-top: $spacing-between-sections/4;
+}
+
+.image--full-with .image__caption {
+    @include full-width(); 
+}
+
+.image--full-with,
+.is-style-image--full-with{
+    width: 100%;
+}
+
+@for $i from 3 through 12 {
+    .image--col-#{$i} {
+        @include make-grid-item($item-col-spread: $i, $margin-bottom: $spacing-between-images);
+        
+        @include md-max(){
+            @include make-grid-item(12, $margin-bottom: $spacing-between-images-s);
+        }
+    }
+}
+
+.image--content-with:not(.is-style-image--full-with),
+.wp-block-image{
+    @include full-width(); 
+}
+
+img.image__col-ten{
+    @include make-grid-item(10, $margin-bottom: 0);
+    margin: auto;
+}
+
+.image-with-text{
+    @include ld-margin-bottom($spacing-between-sections/2);
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections/4);
+    }
+
+    &__container{
+        @include flexbox(row, wrap, flex-start, center);
+    }
+
+    &__img{
+        @include make-grid-item(9, $margin-bottom: 0);
+        
+        @include md-max(){
+            @include make-grid-item(12, $margin-bottom: $spacing-between-sections/2);
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__text{
+        @include make-grid-item(2, $margin-bottom: 0); 
+        margin-left: 100% / 12 * 1; //100% / $cols-per-row * $item-col-spread;
+        
+        @include md-max(){
+            @include make-grid-item(9, $margin-bottom: 0);
+            margin-left: 100% / 12 * 3; //100% / $cols-per-row * $item-col-spread;
+        }
+    }
+
+    &__cat{
+        @include type-face($type-face, $font-weight-bold);
+        @include font-size($font-settings-image-text-cat);
+        @include ld-margin-bottom($gutter);
+    }
+
+    &__txt{
+        @include type-face($type-face, $font-weight);
+        @include font-size($font-settings-image-text);
+    }
+}

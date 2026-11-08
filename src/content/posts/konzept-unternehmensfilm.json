@@ -1,0 +1,44 @@
+{
+  "title": "Konzept für den ZF Unternehmensfilm",
+  "slug": "konzept-unternehmensfilm",
+  "categories": [
+    "art-direction"
+  ],
+  "sortDate": "2020-01-31",
+  "tileColumns": 4,
+  "sortNumber": 18,
+  "thumbnail": "/uploads/2019/12/home_ZF-Imagefilm-2015_begrenzt-1.gif",
+  "heroImage": "/uploads/2019/12/home_ZF-Imagefilm-2015_begrenzt-1.gif",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "ZF Friedrichshafen entwickelt und produziert Technologie für Mobilität im Bereich Personenfahrzeuge, Nutzfahrzeuge und Industrietechnik. Das bevorstehende Firmenjubiläum, sowie die Übernahme von TRW Automotive und die somit gestärkte Kompetenz im Megatrend Autonomes Fahren bedeuten ein neues Kapitel für das Unternehmen. Der aufgrund dessen produzierte Image-Film gewährt einen Einblick in Tätigkeiten und Kompetenzen auf globaler Ebene.",
+  "copyright": "Publicis Pixelpark 2015",
+  "client": "ZF Friedrichshafen",
+  "credits": [
+    {
+      "job": "Produktion",
+      "name": "E+P Films, München"
+    },
+    {
+      "job": "Regie, DOP",
+      "name": "Lutz Hattenhauer"
+    },
+    {
+      "job": "Grading",
+      "name": "ARRI München"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "embed",
+      "provider": "vimeo",
+      "url": "https://player.vimeo.com/video/266568669?dnt=1&app_id=122963"
+    }
+  ],
+  "seo": {
+    "title": "Konzept und Realisation für den ZF Unternehmensfilm",
+    "description": "Im Rahmen des Firmenjubiläums und einer Konkurrenz-Übernahme wurde ein Konzept für den Unternehmensfilm von ZF Friedrichshafen erstellt und realisiert."
+  }
+}

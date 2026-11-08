@@ -1,0 +1,7 @@
+.video{
+    @include responsive-ratio($cw: 40%); 
+
+    @include sm-max(){
+        @include responsive-ratio($cw: 100%); 
+    }
+}

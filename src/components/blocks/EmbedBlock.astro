@@ -1,0 +1,20 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'embed' }>;
+const { provider, url } = Astro.props;
+---
+
+<figure class={`wp-block-embed is-type-video is-provider-${provider} wp-block-embed-${provider} wp-embed-aspect-16-9 wp-has-aspect-ratio`}>
+  <div class="wp-block-embed__wrapper">
+    <iframe
+      src={url}
+      title={`${provider} video`}
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    />
+  </div>
+</figure>

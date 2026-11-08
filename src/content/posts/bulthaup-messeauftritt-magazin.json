@@ -1,0 +1,69 @@
+{
+  "title": "bulthaup Messeauftritt und Magazin",
+  "slug": "bulthaup-messeauftritt-magazin",
+  "categories": [
+    "art-direction",
+    "editorial",
+    "print"
+  ],
+  "sortDate": "2020-02-05",
+  "tileColumns": 6,
+  "sortNumber": 12,
+  "thumbnail": "/uploads/2020/02/home_BUL_Mag_412.jpg",
+  "heroImage": "/uploads/2020/02/BUL_Bag_combo_02_cut.jpg",
+  "heroImageMobile": "/uploads/2020/02/BUL_mobhero_1100x1600px.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Mit ihren hochwertigen und innovativen Küchen schafft bulthaup Orte der Begegnung, der Kommunikation und Kreativität. Das ebenso hochstehende Accessoires-Sortiment war bislang aber vor allem Bestandskunden ein Begriff. Mit der Man's World in Zürich nutzt bulthaup die Gelegenheit, ein erweitertes Kundensegment zu erreichen.\n \nDie Kommunikation am Messestand setzt auf authentisches Storytelling. Eine auf Instagram erfolgreiche Brot-Bäckerin, ein Künstler sowie ein Gourmet-Koch mit eigener Saucen-Marke erzählen in einem eigens für den Anlass produzierten Magazin, wie sie neuen Ideen Raum zum Wachsen geben. Die handschriftlichen Aussagen aus den Reportagen finden sich auch auf dem Messestand im Raum und am Mobiliar wieder.",
+  "copyright": "Studio mi 2020",
+  "credits": [
+    {
+      "job": "Fotografie (Magazin)",
+      "name": "Severin Jakob"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2020/02/BUL_Karte.jpg",
+      "alt": "",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/02/BUL_Mag_M-Kopie.png",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/02/BUL_Fotokombi.jpg",
+      "alt": "",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/02/BUL_Stand-38.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/02/BUL_Stand-117.jpg",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/02/BUL_Stand-147.jpg",
+      "alt": "",
+      "fullWidth": false
+    }
+  ],
+  "seo": {
+    "title": "bulthaup Messeauftritt und Magazin",
+    "description": "Studio mi GmbH zeichnet sich für den Messeauftritt sowie die Kreation eines exklusiven Magazins für bulthaup an der Man's World Zürich 2019 verantwortlich."
+  }
+}

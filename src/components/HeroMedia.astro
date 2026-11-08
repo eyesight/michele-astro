@@ -1,0 +1,36 @@
+---
+interface Props {
+  heroImage?: string;
+  heroImageMobile?: string;
+  heroVideo?: string;
+  heroWidth: 'content' | 'fullwidth';
+  heroObjectFitContain: boolean;
+  fallbackImage: string;
+}
+const { heroImage, heroImageMobile, heroVideo, heroWidth, heroObjectFitContain, fallbackImage } = Astro.props;
+
+const imageUrl = heroImage || (!heroVideo ? fallbackImage : '');
+const wrapperClasses = ['hero-image__wrapper', heroWidth === 'content' ? 'content' : 'fullwidth'];
+if (heroObjectFitContain) wrapperClasses.push('hero-image__wrapper--contain');
+const desktopClass = heroImageMobile ? 'screen-only' : '';
+---
+
+{
+  (imageUrl || heroImageMobile) && (
+    <div class={`hero-image ${heroWidth}`}>
+      <div class={wrapperClasses.join(' ')}>
+        {imageUrl && <img class={`hero-image__image ${desktopClass}`} src={imageUrl} alt="" />}
+        {heroImageMobile && <img class="hero-image__image mobile-only" src={heroImageMobile} alt="" />}
+      </div>
+    </div>
+  )
+}
+{
+  !imageUrl && !heroImageMobile && heroVideo && (
+    <div class={`hero-video ${heroWidth}`}>
+      <div class={wrapperClasses.join(' ')} set:html={heroVideo} />
+    </div>
+  )
+}
+
+<div class="hero-image--placeholder" />

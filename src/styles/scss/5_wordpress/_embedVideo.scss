@@ -1,0 +1,19 @@
+.wp-block-embed,
+.embedVideo {
+    @include ld-margin-bottom($spacing-between-sections/2);
+    @include full-width();
+    @include sm-max(){
+        @include ld-margin-bottom($spacing-between-sections/4);
+        @include ld-margin-bottom($spacing-between-sections/2, '.footer');
+    }
+}
+
+.wp-block-embed__wrapper,
+.embedVideo {
+    @include responsive-ratio();
+    @include full-width();
+}
+
+.embedVideo.embedVideo--full-with {
+    width: 100%;
+}

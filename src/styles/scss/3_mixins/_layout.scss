@@ -1,0 +1,35 @@
+@mixin full-width(){
+  width: calc(100% - #{$gutter * 2});
+  margin-left: auto;
+  margin-right: auto;
+
+  @include md-min() {
+    width: calc(100% - #{$gutter * 7});
+    max-width: $max-width-full;
+  }
+}
+
+@mixin content-width(){
+  width: calc(100% - #{$gutter * 2});
+  margin-left: auto;
+  margin-right: auto;
+
+  @include sm-min {
+    width: calc(100% - #{$gutter * 6});
+  }
+  
+  @include md-min() {
+    max-width: $max-width-content;
+    width: 80%;
+  }
+}
+
+@mixin screen-width(){
+  width: 100%;
+  max-width: 100%;
+}
+
+@mixin reset-width(){
+  width: 100%;
+  max-width: 100%;
+}

@@ -1,0 +1,22 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'accordion' }>;
+const { items } = Astro.props;
+---
+
+<div class="accordion">
+  {
+    items.map((item) => (
+      <div class="accordion-item">
+        <button class="accordion-item__button js-toggle-accordion">
+          <h3 class="accordion-item__title">{item.title}</h3>
+        </button>
+        <div class="accordion-item__content">
+          <div class="accordion-item__content-inner" set:html={item.content} />
+        </div>
+      </div>
+    ))
+  }
+</div>

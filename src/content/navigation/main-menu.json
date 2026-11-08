@@ -1,0 +1,10 @@
+{
+  "location": "main-menu",
+  "items": [
+    {
+      "label": "About",
+      "url": "/design-studio-mi/",
+      "children": []
+    }
+  ]
+}

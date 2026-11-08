@@ -1,0 +1,32 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+
+const settings = await getEntry('siteSettings', 'settings');
+const socialMenu = await getCollection('navigation', (entry) => entry.data.location === 'social-menu');
+const footerMenu = await getCollection('navigation', (entry) => entry.data.location === 'footer-menu');
+---
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__left">
+      {settings?.data.footerAddress1.map((widget) => <div class="footer__text" set:html={widget.content} />)}
+      {settings?.data.footerAddress2.map((widget) => <div class="footer__text" set:html={widget.content} />)}
+      <ul class="footer__menu">
+        {
+          (socialMenu[0]?.data.items ?? []).map((item) => (
+            <li>
+              <a href={item.url} target={item.target}>
+                <span>{item.label}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="footer__right">
+      <ul class="footer__menu-right">
+        {(footerMenu[0]?.data.items ?? []).map((item) => <li><a href={item.url}>{item.label}</a></li>)}
+      </ul>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,36 @@
+$marginal-gutter: $gutter;
+$col-count: 12; // define how many collumns the general overlaying grid has 
+
+// =============================================================================
+// Layout
+// =============================================================================
+$col-span-content: 6; // relates to col-count
+$col-span-marginal: 4; // relates to col-count
+
+$layout-breakpoint: map-get($layout-breakpoints, 'lg');
+
+// =============================================================================
+// Grid
+// =============================================================================
+
+// for 3 cols in row
+$col-span-tile: 4; // relates to col-count
+$col-span-tile-large: 8; // relates to col-count 
+
+// for 4 cols in row
+$col-span-tile-4: 3; // relates to col-count
+$col-span-tile-large-4: 12; // relates to col-count
+
+$col-span-tile-2: 2;
+$col-span-tile-3: 3;
+$col-span-tile-4: 4;
+$col-span-tile-5: 5;
+$col-span-tile-6: 6;
+$col-span-tile-7: 7;
+$col-span-tile-8: 8;
+$col-span-tile-9: 9;
+$col-span-tile-10: 10;
+$col-span-tile-11: 11;
+
+$max-width-full: 2000px !default;
+$max-width-content: 1280px !default;

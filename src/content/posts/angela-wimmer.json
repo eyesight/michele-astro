@@ -1,0 +1,111 @@
+{
+  "title": "Angela Wimmer Coaching",
+  "slug": "angela-wimmer",
+  "categories": [
+    "art-direction",
+    "branding",
+    "online",
+    "print"
+  ],
+  "sortDate": "2025-10-30",
+  "tileColumns": 7,
+  "sortNumber": 2,
+  "thumbnail": "/uploads/2025/10/Screen_1hand_still.jpg",
+  "heroImage": "/uploads/2025/10/Screen_1hand_desktop-1.jpg",
+  "heroImageMobile": "/uploads/2025/10/Screen_1hand_still_1080x1920.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "headline": "Mit psychologischer Beratung und Coaching wieder in einen Flow finden",
+  "lead": "Wer profitiert von der Monogamie, woher kommt diese plötzliche Trennungsangst, wie erfülle ich mir meinen Kinderwunsch als Single? Angela Wimmer hilft Frauen ab 30, durch komplexe Themen zu navigieren, ihr Leben wieder in einen Flow zu bringen und positiv in die Zukunft zu schauen. Der farbintensive, aber dennoch minimalistische Auftritt sowie die formenstarke Wortmarke visualisieren diesen Anspruch.",
+  "copyright": "Studio mi GmbH 2025",
+  "credits": [],
+  "backgroundColor": "#000CA5",
+  "textColor": "#FFFFFF",
+  "headerColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/AW_Logo_2.gif",
+          "alt": "",
+          "columns": 12
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/BenditoMockup-B-Iphone_1000px-scaled.jpg",
+          "alt": "Bild eines Instagram-Feeds auf einem iphone",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/Image0001_hoch-2-scaled.jpg",
+          "alt": "Bild von zwei Visitenkarten, Vorder- und Rückseite",
+          "columns": 6
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": true,
+      "images": [
+        {
+          "type": "selfHostedVideo",
+          "src": "/uploads/2025/10/AWI_macbook_web_2-1.mp4",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "type": "imageContainer",
+      "spaceBetween": false,
+      "centered": false,
+      "images": [
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/Website_mobile_mockup_1000x1200.jpg",
+          "alt": "Mobile-Ansicht der Website",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/AWI_Textslides.gif",
+          "alt": "Slides mit Fragen der Zielgruppen",
+          "caption": "Angela Wimmer spiegelt die Fragen, die die Zielgruppe bewegen",
+          "columns": 6
+        },
+        {
+          "type": "imageSized",
+          "src": "/uploads/2025/10/briefpapier_highres.jpg",
+          "alt": "Hand hält Briefpapier mit Logo-Design hoch, Himmel im Hintergrund",
+          "columns": 12
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"https://fontsinuse.com/uses/74554/angela-wimmer-coaching\" target=\"_blank\" rel=\"noreferrer noopener\">Projekt auf Fonts in Use</a>"
+    },
+    {
+      "type": "text",
+      "text": "<a href=\"http://angelawimmer.ch\">angelawimmer.ch</a>"
+    }
+  ],
+  "seo": {
+    "title": "Angela Wimmer Coaching",
+    "description": "Creative Concepts and Design"
+  }
+}

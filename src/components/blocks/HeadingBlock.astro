@@ -1,0 +1,10 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'heading' }>;
+const { level, text } = Astro.props;
+const Tag = `h${level}` as 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+---
+
+<Tag class="wp-block-heading" set:html={text} />

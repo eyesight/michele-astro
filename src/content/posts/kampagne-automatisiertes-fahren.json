@@ -1,0 +1,75 @@
+{
+  "title": "ZF System-Monologe",
+  "slug": "kampagne-automatisiertes-fahren",
+  "categories": [
+    "art-direction",
+    "print"
+  ],
+  "sortDate": "2020-01-02",
+  "tileColumns": 3,
+  "sortNumber": 16,
+  "thumbnail": "/uploads/2020/01/ZF_Ads_2000px.jpg",
+  "heroImage": "/uploads/2020/01/ZF_Cloud_Ad_2000px.jpg",
+  "heroImageMobile": "/uploads/2020/01/ZF_mobhero.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Automatisiertes Fahren wird ein immer relevanteres Thema, komplizierte Elektronik und Mechanik in PKWs häufen sich. ZF lässt solche Komponenten zu einem in sich funktionierenden System zusammenwachsen. Wie kann eine Kampagne dieses umfassende, aber komplexe Angebot einfach kommunizieren? Die Idee: Einsicht schafft Vertrauen. Die unterschiedlichsten Kommandoketten innerhalb eines Systems werden typographisch aufgeschlüsselt und zeigen, wie einzelne Komponente automatisiert eine Reaktion einleiten.",
+  "copyright": "Publicis Pixelpark 2016",
+  "credits": [],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/ZF_Ads_2000px.jpg",
+      "alt": "Zwei aufgeschlagene Magazine zeigen ganzseitige Inserate der Kampagne. Die Kommandokette von je einem System wieder typographisch aufbereitet, z.B: \"Verkehrsinfo an Fahrer – 4 km stockender Verkehr – Traffic Jam Assist: Tempo anpassen, Spur halten. Im Stop & Go Modus entspannt weiterfahren.",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/uebersicht.jpg",
+      "alt": "Vier Beispiele der Kampagne Automatisiertes Fahren.",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/75530_ZF_728x90_DE_30kb.gif",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/75530_ZF_728x90_DE_30kb.gif",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/75530_ZF_728x90_DE_30kb.gif",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/75530_ZF_728x90_DE_30kb.gif",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/75530_ZF_728x90_DE_30kb.gif",
+      "alt": "",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2020/01/ZF_Banner_2000px.gif",
+      "alt": "",
+      "fullWidth": true
+    }
+  ],
+  "seo": {
+    "title": "Kampagne Automatisiertes Fahren",
+    "description": "Die Kampagne Automatisiertes Fahren von ZF Friedrichshafen zeigt unterschiedlichste Kommandoketten innerhalb eines Systems typographisch aufgeschlüsselt."
+  }
+}

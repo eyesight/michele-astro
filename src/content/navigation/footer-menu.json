@@ -1,0 +1,15 @@
+{
+  "location": "footer-menu",
+  "items": [
+    {
+      "label": "Impressum",
+      "url": "/impressum/",
+      "children": []
+    },
+    {
+      "label": "Datenschutz",
+      "url": "/datenschutz/",
+      "children": []
+    }
+  ]
+}

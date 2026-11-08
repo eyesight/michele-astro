@@ -1,0 +1,64 @@
+{
+  "title": "Klinik Hirslanden Mitarbeitermagazin Redesign",
+  "slug": "mitarbeitermagazin-hirslanden-klinik",
+  "categories": [
+    "art-direction",
+    "editorial",
+    "illustration",
+    "print"
+  ],
+  "sortDate": "2019-12-23",
+  "tileColumns": 6,
+  "sortNumber": 15,
+  "thumbnail": "/uploads/2019/12/HIRS_Cover_Home_cut.jpg",
+  "heroImage": "/uploads/2019/12/HIRS_Cover_doppel.jpg",
+  "heroImageMobile": "/uploads/2019/12/HIRS_mobhero.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Mit 17 Kliniken bildet Hirslanden das grösste medizinische Netzwerk der Schweiz – eine Herausforderung für die Mitarbeiter-Kommunikation. Um die zahlreichen internen Publikationen auf eine Linie zu bringen, wurden in einem gemeinsamen Workshop mit den Verantwortlichen Themen ausgewählt und zu Rubriken definiert. Ein übergreifendes Mantelkonzept mit lokalem Einleger sorgt für Einheit auf nationaler Ebene. Visuell bilden die CD-Standards das Herzstück, ergeben mit frischen Akzenten jedoch einen neuen, eigenen Look. Dank der Arbeit mit externen Fotografen, wie Basil Stücheli oder Severin Jakob, können Einblicke in den Klinik-Alltag gewährt und verschiedene Menschen und ihre Berufe authentisch und nah portraitiert werden.",
+  "copyright": "NeidhartSchön 2017",
+  "credits": [
+    {
+      "job": "Fotografie",
+      "name": "Basil Stücheli"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/HIRS_Testament_1440.png",
+      "alt": "Doppelseite betitelt mit \"Gefährliches Testament\". In der Rubrik \"Diagnose\" wird in jeder Ausgabe über eine kuriose Diagnose berichtet. Diesmal, wie eine Frau immer wieder mit merkwürdigen Symptomen ins Spital eingeliefert wird. Der behandelnde Arzt hört eine Konversation des Ehemannes mit, was ihn zum Verdacht führt, dass dieser seine Frau vergiften will.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/HIRS_report01_1440.png",
+      "alt": "Eine Reportage über die Intensivstation im neuen Miarbeitermagazin der Hirslanden Klinik.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/HIRS_report02_1440.png",
+      "alt": "Die Fortsetzung der Reportage über die Intensivstation im neuen Miarbeitermagazin der Hirslanden Klinik.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/HIRS_illus.jpg",
+      "alt": "Grafiken bzw. Illustrationen für das neue Mitarbeitermagazin der Hirslanden Klinik. U.a. das Poritrait eines Arztes, aber auch eine informative wie humorvolle Infografiken über Cyber-Sicherheit.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/HIRS_overview_schraeg.jpg",
+      "alt": "Übersicht über einige Doppelseiten des neuen Mitarbeitermagazins der Hirslanden Klinik",
+      "fullWidth": true
+    }
+  ],
+  "seo": {
+    "title": "Das neue Mitarbeitermagazin der Hirslanden Klinik",
+    "description": "Das Mitarbeitermagazin der Hirslanden Klinik wurde inhaltlich und visuell komplett überarbeitet und zeigt sich im frischen, jedoch CD-konformen Gewand."
+  }
+}

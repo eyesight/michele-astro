@@ -1,0 +1,9 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'heading3' }>;
+const { text } = Astro.props;
+---
+
+<h3 class="title-h3 content" set:html={text} />

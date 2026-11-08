@@ -1,0 +1,18 @@
+---
+import type { z } from 'astro:content';
+import type { blockSchema } from '../../content.config';
+
+type Props = Extract<z.infer<typeof blockSchema>, { type: 'titleWithImage' }>;
+const { src, alt, heading, big } = Astro.props;
+---
+
+<div class="content title-image">
+  <div class="grid-container title-image__container">
+    <figure class="title-image__image">
+      <img src={src} alt={alt} />
+    </figure>
+    <div class={`title-image__wrapper${big ? ' title-image__wrapper--big' : ''}`}>
+      <h2 class="title-image__title">{heading}</h2>
+    </div>
+  </div>
+</div>

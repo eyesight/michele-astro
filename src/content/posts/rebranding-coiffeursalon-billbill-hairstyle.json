@@ -1,0 +1,64 @@
+{
+  "title": "Bill&Bill Brand refresh",
+  "slug": "rebranding-coiffeursalon-billbill-hairstyle",
+  "categories": [
+    "art-direction",
+    "branding",
+    "online",
+    "print"
+  ],
+  "sortDate": "2019-12-31",
+  "tileColumns": 4,
+  "sortNumber": 13,
+  "thumbnail": "/uploads/2019/12/billbill_macbook3.gif",
+  "heroImage": "/uploads/2019/12/BB_Vkarten_2000px-scaled-e1743432747773.jpg",
+  "heroImageMobile": "/uploads/2019/12/BB_Vkarten_2080x1920.jpg",
+  "heroWidth": "fullwidth",
+  "heroObjectFitContain": false,
+  "lead": "Der Coiffeursalon der Zwillingsschwestern Barbara und Sonja Bill erhält einen neuen Standort und ein sanftes Rebranding: Mit dem Interieur erhalten auch sämtliche Kommunikations-Mittel ein sanftes Facelift. Gestrichenes Papier und Metallic-Farbe weichen einem hochwertigen, durchgefärbten Naturpapier, welches einzig mit Weisser Farbe bedruckt wird. Minimalistisch zeigt sich auch die Website. Viel Raum und der grosszügiger Einsatz von Fotografie und Film von Nora Nussbaumer lenken den Fokus auf das Wichtigste im Salon – die Persönlichkeiten.",
+  "copyright": "gyselroth 2019",
+  "credits": [
+    {
+      "job": "Fotografie:",
+      "name": "Nora Nussbaumer"
+    }
+  ],
+  "backgroundColor": "#000000",
+  "textColor": "#FFFFFF",
+  "body": [
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/BB_Stationery_2000px_200127-scaled.jpg",
+      "alt": "Übersicht der gesamten Geschäftsdrucksachen des Coiffeursalon nach dem Rebranding. Gutschein, Treuekarte, Terminkarte, Visitenkarte, Couvert, etc.",
+      "fullWidth": true
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/BB_gutschein-scaled.jpg",
+      "alt": "Eine Ansicht des aufgeklappten Geschenkgutscheins und passnden Couverts.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/BB_Collage_1440px.png",
+      "alt": "Visualisierung der Bildwelt: Eine Blumenvase gefüllt mit bräunlichen Blätterstängeln und kleinen runden roten Blüten. Steht auf einer schwarzen Theke vor einem Dunkelgrauen, verwaschenen Hintergrund. Rechts eine Schwarzweiss-Nahaufnahme von zwei Händen beim Waschprozess im schäumenden Haar.",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/billbill_macbook_2000px_200127_cut100_red-1.gif",
+      "alt": "GIF-Bild, zeigt Website des Coiffeursalons nach dem Rebranding. Die Startseite zeigt zur Hälfte eine beige Fläche, zur anderen Hälfte kurze Vignetten der Arbeiten im Friseursalon: Haareschütteln, Locken machen, Brautfrisur,...alles in schwarzweiss",
+      "fullWidth": false
+    },
+    {
+      "type": "image",
+      "src": "/uploads/2019/12/billbill_iPad_2000px.jpg",
+      "alt": "Hoch und Querversion der Website nach dem Rebranding auf dem Tablet. Links, im Hochformat: eine Bildergalerie. Rechts im Querformat die Navigation.",
+      "fullWidth": false
+    }
+  ],
+  "seo": {
+    "title": "Rebranding für Coiffeursalon Bill&Bill Hairstyle",
+    "description": "Der Coiffeursalon der Zwillingsschwestern Barbara und Sonja Bill erhält, mit dem Umzug an einen neuen Standort, ein sanftes Rebranding."
+  }
+}
